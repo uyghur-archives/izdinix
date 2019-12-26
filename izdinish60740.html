@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143956760-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-143956760-1');
+</script>
+
+<base href="./" />
+<title>C# .net مۇھىتىدا WebService نى چاقىرىپ ئىشلىتىش</title>
+<link href="./izdinish60740.html" rel="canonical" />
+<meta name="keywords" content="C# .net مۇھىتىدا WebService نى چاقىرىپ ئىشلىتىش ئىزدىنىش تور بېكىتى" />
+<meta name="description" content="C# .net مۇھىتىدا WebService نى چاقىرىپ ئىشلىتىش ئىزدىنىش تور بېكىتى ,ئىزدىنىش تور بېكىتى" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	@font-face {
+		font-family: "Alpida Unicode System";
+		font-weight: normal;
+		src:url(/aus.eot); /* IE */
+		src: local("Alpida Unicode System"), url("/aus.ttf") format("TrueType"); /* non-IE */
+	}
+	* { word-wrap: keep-all; }
+	body {direction:rtl;font-family: alpida unicode system, ukij tuz tom, Verdana;FONT-SIZE: 15px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>ئىزدىنىش تور بېكىتى</h2>
+</center><div id="nav">
+	<a href="./">ئىزدىنىش مۇنبىرى</a> › <a href="./?fid-115.html">پروگرامما تىلى</a> › C# .net مۇھىتىدا WebService نى چاقىرىپ ئىشلىتىش</div>
+
+<div id="content">
+			<p class="author">
+					<strong>heqteyur</strong>
+				يوللانغان ۋاقتى 2014-11-17 11:19:07	</p>
+			<h3>C# .net مۇھىتىدا WebService نى چاقىرىپ ئىشلىتىش</h3>
+		ئەسسالامۇ ئەلەيكۇم دوستلار:<br />
+بىز ئالدىنقى قېتىملىق يازمىمىزدا C# .net مۇھىتىدا WebService نى قۇرۇش ئۇسۇلى توغرىسىدا سۆزلىگەن ئىدۇق.<br />
+بۈگۈنكى يازمىمىزدا بولسا شۇ قۇرغان WebService نى ئەمەلىي يۇمشاق دېتال ئېچىش مۇھىتىدا ئىشلىتىشنى سۆزلەپ ئۆتمەكچى.<br />
+مىسال ئۈچۈن بىر قانچە WebService ئېغىزى بىلەن تەمىن ئېتىدىغان تور بېكەت http://www.webxml.com.cn دىكى ئېغىزلاردىن مىسال قىلىپ سۆزلەيمىز.<br />
+1، مىسال ئۈچۈن يۇقۇرىدىكى تور بېكەت تەمىنلىگەن ئىنگلىزچە خەنزۇچە لۇغەت ئىقتىدار ئېغىزىدىن پايدىلىنىمز،ئاۋۋال مۇنۇ بەتنى ئېچىپ كۆرۈپ باقايلى.<br />
+<br />
+http://www.koklen.net/ueditor/net/upload/image/20141117/6355182504393203477951436.png<br />
+يۇقۇرىدىكى رەسىمدە كۆرسىتىلگەندىكىدەك 3 قەدەمنى باسساق مۇنۇ بەت ئېچىلىدۇ.<br />
+http://www.koklen.net/ueditor/net/upload/image/20141117/6355182509903904195210438.png<br />
+يۇقۇرۇدىكى رەسىمدە EnglishChinese.asmx ناملىق  WebService نىڭ قانداق ئېغىزلار بىلەن تەمىن ئەتكەنلىكى ۋە چاقىرىش پارامېتېر تەلىپى يەنە قايتۇرۇپ بېرىدىغان سانلىق مەمۇمات تىپى قاتارلىق ئۇچۇرلار يېزىلغان.بىز شۇنىڭ ئىچىدىن Translator دېگەن فۇنكىسىيەنى سىناق قىلىپ باقايلى. ئەمىسە شۇنى بېسىڭ.<br />
+http://www.koklen.net/ueditor/net/upload/image/20141117/6355182522554461208416550.png<br />
+رەسىمدە كۆرسىتىلگەندەك پارامېتېر ئۈچۈن تەرجىمە قىلدۇرماقچى بولغان سۆزنى String تىلىق قىلىپ قىممەت بېرىمىز، نەتىجىسى بىزگە DataSet تىپى ھالەتتە قايتىدۇ.<br />
+http://www.koklen.net/ueditor/net/upload/image/20141117/6355182535804822377589629.png<br />
+رەسىمدە تەرجىمىنىڭ نەتىنجىسى ئۈچ دانە DataTable نى DataSet نىڭ ئىچىگە ئېلىپ قايتۇرۇپ بەرگەن، ئەمدى بىز بۇ ئېرىشكەن DataSet نى ئادەتتە پروگراممىدا قانداق بىر تەرەپ قىلىپ ئىشلەتكەن بولساق شۇ بويىچە ئىشلىتىپ كەتسەك بولىدۇ.<br />
+<br />
+خۇش، ئەمدى بىز ئەمەلىي تۈردە قانداق ئىشلىتىشنى كۆرۈپ باقايلى، يەنى بىز  WebService نى مەيلى قارا ئېكران پروگراممىسى(شۇنداق ئاتاپ تۇراي ھە، يەنى Console Application نى دېمەكچى)، ياكى ئۈستەل يۈزى پروگراممىسى ۋە ياكى ASP.NET تور پروگراممىسى بولسۇن ھەممىسىدە ئوخشاش ئۇسۇلدا ئىشلەتسەك بولىدۇ. بۇ يەردە مىسال ئۈچۈن بىر ئۈستەل يۈزى پروگراممىسى قۇرۇلۇشى قۇرايلى.كۆزنەككە ئاددىي قىلىپ بىر دانە كۇنۇپكا، بىر دانە تېكىست ساندۇقى قويايلى. ئاندىن ماۋۇ رەسمدىكىدەك مەشغۇلات قىلايكى:<br />
+http://www.koklen.net/ueditor/net/upload/image/20141117/6355182568061498343076621.png<br />
+يۇقۇرىدىكى رەسىمدىكىدەك 添加Web引用 دېگەن تۈرنى تاللىساق مۇنداق كۆزنەك چىقىدۇ.<br />
+http://www.koklen.net/ueditor/net/upload/image/20141117/6355182577116354379939427.png<br />
+<br />
+يۇقۇرىدىكى URL دېگەن ئادرېسى ئورنىغا بىز ئىشلەتمەكچى بولغان ئېغىز ئادرېسىنى يازىمىز، يەنى بۇ مىسالدا بۇنى يازىمىز.<br />
+http://fy.webxml.com.cn/webservices/EnglishChinese.asmx<br />
+<br />
+ئۇنى يېزىپ يېنىدىكى كۇنۇپكىنى باسساق مۇنداق نەتىجە چىقىدۇ.<br />
+http://www.koklen.net/ueditor/net/upload/image/20141117/6355182588436106143711669.png<br />
+بۇ دەل بىز يازمىنىڭ بېشىكى قىسىمدا كۆرگەن بەت شۇ، بۇ بەتنىڭ ئېچىلغانلىقى ئېغىز ئادرېسىنىڭ توغرا ھەم ئېغىزلارنىڭ چاقىرىلىشقا تەييار بولغانلىقىنى بىلدۈرىدۇ. Web引用名 دېگەننى ئاددىي بولسۇن ئۈچۈن مۇنداق ئۆزگەرتىپ جەزملەشنى باسىمىز.<br />
+http://www.koklen.net/ueditor/net/upload/image/20141117/6355182600201014829723227.png<br />
+يەنى 添加引用 كۇنۇپكىسىنى بېسىپ جەزملەيمىز. شۇنىڭ بىلەن WebService بىلەن بولغان ئۇلىنىش ئېغىزىنى تەڭشەپ بولغان بولدۇق، ئەمدى پروگراممىمىزدا ئىشلىتىپ كەتسەك بولىدۇ. يەنى بىز ئاباي كۆزنەككە تاشلىغان كۇنۇپكىنىڭ چىكىلىش ھادىسىسىگە مۇنۇ كودلارنى يېزىپ ئىجرا قىلىپ باقايلى.<br />
+http://www.koklen.net/ueditor/net/upload/image/20141117/6355182610830377259374319.png<br />
+ئېغىزلارنى ئىشلىتىشن بۇرۇن يۇقۇرىدىكى رەسىمدىكىدەك ئېغىز ئوبيېكىتىدىن بىرنى قۇرىۋالىمىز، يەنى MyWebService دېگەن نام بوشلۇقى ئاستىدىكى EnglishChinese دېگەن كلاستىن بىر دانە ئوبيېكىت قۇرىۋالىمىز، ئوبيېكىتتىن بىرنى قۇرىۋالغاندىن كېيىن شۇنىڭ ئىچىدىكى خالىغان فۇنكىسىيەنى ئىشلەتسەك بولىدۇ. تۆۋەندىكى رەسىمگە قاراڭ.<br />
+<br />
+http://www.koklen.net/ueditor/net/upload/image/20141117/6355182626131661154545283.png<br />
+يۇقۇردىكى رەسىمدىكىدەك كودنى يېزىپ ئىجرا قىلسا مۇنداق نەتىجە چىقىدۇ.<br />
+http://www.koklen.net/ueditor/net/upload/image/20141117/6355182631097238463737140.png<br />
+ئەمدى تۆۋەندىكى كودنى يېزىپ ئىجرا قىلىپ باقايلى.<br />
+http://www.koklen.net/ueditor/net/upload/image/20141117/6355182634385227414556221.png<br />
+يۇقۇرىدىكى كودنى ئىجرا قىلساق تۆۋەندىكى نەتىجىگە ئېرىشىمىز.<br />
+http://www.koklen.net/ueditor/net/upload/image/20141117/6355182638466717529782771.png<br />
+شۇنداق قىلىپ WebService نى چاقىرىپ ئىشلىتىش جەريانلىرى تامام بولدى، ئۆزىڭلار سىناپ باقساڭلا بولىدۇ.<br />
+ئەسكەرتىش: مەنبەسىنى ئەسكەرتىپ خالىغانچە پايدىلانسىڭىز بولىدۇ. كۆكلەن بلوگى http://www.koklen.net<br />
+<br />
+			<div class="page">
+		بەت: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	:
+	<a href="./izdinish60740.html" target="_blank"><strong>C# .net مۇھىتىدا WebService نى چاقىرىپ ئىشلىتىش</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="./www.discuz.net">Discuz! X2.5 Archiver</a></strong>   © 2001-2012 <a target="_blank" href="./www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

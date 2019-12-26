@@ -1,0 +1,150 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143956760-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-143956760-1');
+</script>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143956760-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-143956760-1');
+</script>
+
+<base href="./" />
+<title>Ubuntu دا java مۇھىتى ھازىرلاش-ئىزدىنىش تورى</title>
+<link href="./izdinish58034.html" rel="canonical" />
+<meta name="keywords" content="ئىزدىنىش تورى  Ubuntu دا java مۇھىتى ھازىرلاش" />
+<meta name="description" content="ئىزدىنىش تورى  Ubuntu دا java مۇھىتى ھازىرلاش ,ئىزدىنىش تور بېكىتى" />
+<meta name="generator" content="Discuz! X3.2" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2013 Comsenz Inc." />
+<style type="text/css">
+	body {direction: rtl; font-family: Alpida Unicode System, UKIJ Tuz Tom, Microsoft Uighur, DejaVu Sans, Helvetica Neue, Segoe UI, Helvetica, Tahoma, Arial, sans-serif;FONT-SIZE: 15px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>ئىزدىنىش تور بېكىتى</h2>
+</center><div id="nav">
+	<a href="./">ئىزدىنىش مۇنبىرى</a> › <a href="./?fid-115.html">پروگرامما تىلى</a> › Ubuntu دا java مۇھىتى ھازىرلاش</div>
+
+<div id="content">
+			<p class="author">
+					<strong>pansat</strong>
+				يوللانغان ۋاقتى 2014-4-19 11:29:15	</p>
+			<h3>Ubuntu دا java مۇھىتى ھازىرلاش</h3>
+		1.ئاۋۋال jdk نى چۈشۈرىمىز<br />
+http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html<br />
+سىستېما نەشىرىگە ئاساسەن 32 ياكى 64 لىكنى تاللاپ چۈشۈرىمىز.<br />
+كىڭەيتىلگەن نامى tag.gz نى تاللاپ چۈشۈرۈڭ.<br />
+<br />
+<br />
+<br />
+2. سىستېمىنىڭ Home ھۆججەت قىسقۇچىنىڭ ئېچىگە يېڭى ھۆججەت قىسقۇچتىن بىرنى قۇرۇڭ، ئىسمىنى java دەپ بىكىتىڭ.<br />
+<br />
+<br />
+<br />
+<br />
+3.چۈشۈرگەن djk نى java دېگەن ھۆججەت قىسقۇچنىڭ ئىچىگە كۆچۈرۈڭ.<br />
+<br />
+<br />
+<br />
+<br />
+4. مۇھىتنى تەڭشەڭ.sudo gedit /etc/environmentexport JAVA_HOME=/home/halil/java/jdk1.7.0_55<br />
+export JRE_HOME=/home/halil/java/jdk1.7.0_55/jre<br />
+export CLASSPATH=.:$CLASSPATH:$JAVA_HOME/lib:$JAVA_HOME/jre/libsudo gedit /etc/profileexport JAVA_HOME=/home/halil/java/jdk1.7.0_55<br />
+export JRE_HOME=//home/halil/java/jdk1.7.0_55/jre<br />
+export CLASSPATH=.:$CLASSPATH:$JAVA_HOME/lib:$JAVA_HOME/jre/lib<br />
+export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH:$HOME/bin<br />
+<br />
+مانا مۇشۇنداق ئاسان. شۇنىڭ بىلەن java مۇھىتى تەييارلاندى.<br />
+<br />
+ئەمدى كىچىككىنە سىناق<br />
+<br />
+public class Hello{<br />
+    public static void main(String args[]){<br />
+      System.out.println("hello wrold");<br />
+    }<br />
+}<br />
+<br />
+دېمەك مۇۋاپىقىيەتلىك بولدى.java -version<br />
+javac<br />
+java				<p class="author">
+					<strong>pansat</strong>
+				يوللانغان ۋاقتى 2014-4-19 11:32:53	</p>
+			<h3></h3>
+		<br />
+<br />
+يېڭى Ubuntu بەك پەيزىكەن.				<p class="author">
+					<strong>sada425</strong>
+				يوللانغان ۋاقتى 2014-4-19 14:15:01	</p>
+			<h3></h3>
+		بۇنداق جاپا تارتقىچە بازاردىنلا چۈشۈرمەي، يىڭىسىدا بازار يوقمىكەن يا.				<p class="author">
+					<strong>GoodLuck</strong>
+				يوللانغان ۋاقتى 2014-4-19 17:44:25	</p>
+			<h3></h3>
+		ئىزچىل قىزىل قالپاقنى ئىشلىتىپ كەپتىمەن، بۇيرۇق كودى يېزىشمۇ ئاۋارىچىلىق بىلىنمەس بوپ كېتىپتۇ، لىنۇكىس دېسە كۆرۈنمە يۈزلۈك مەشغۇلات پەقەتلا كاللامغا كەلمەيدۇ.				<p class="author">
+					<strong>kokkaptar</strong>
+				يوللانغان ۋاقتى 2014-4-19 19:24:18	</p>
+			<h3></h3>
+		GoodLuck يوللىغان ۋاقتى2014-4-19 17:44 static/image/common/back.gif<br />
+ئىزچىل قىزىل قالپاقنى ئىشلىتىپ كەپتىمەن، بۇيرۇق كودى...<br />
+<br />
+ubuntuنىڭ مۇلازىمىتىر سېستىمىسى كۆزنەكلىك بولمايدۇ، لىكىن چاپان كەيدۈرۈپ كۆزنەكلىك قىلۋالغىلى بولىۋىرىدۇ. <br />
+مەيلى قانداقلا بولسۇن، بۇيرۇق ئارقىلىق باشقۇرۇشمۇ قىزىل قالپاققا قارىغاندا، ubuntu نىڭ مىليۇن ھەسسە ئاسانكەن. :L 				<p class="author">
+					<strong>boran0998</strong>
+				يوللانغان ۋاقتى 2014-4-19 20:06:17	</p>
+			<h3></h3>
+		 بۇ يازمىنى ئاخىرىدا   boran0998 تەھرىرلىگەن. ۋاقتى2014-4-19 20:08<br />
+<br />
+نىمە بۇ Ubuntu دېگەن؟ windows قا ئوخشاش كومپىيۇتېر مەشغۇلات سېستىمىسى ئوخشىمامدۇ؟ ئەگەر شۇنداق بولسا قانداق ئالاھىدىلىكى بار بۇنىڭ؟ (بىلىدىغانلار زاڭلىق قىلماي تەپسىلىيراق دەپ بېرەرسىلەر، بەلكىم باھانەڭلەردە شاگىرتىڭلار بوپ قالامدىم تېخى)				<p class="author">
+					<strong>QUYASH</strong>
+				يوللانغان ۋاقتى 2014-4-19 21:37:44	</p>
+			<h3></h3>
+		ئۇبۇنتۇنىڭ يېڭى نەشىرلىرى بەك ناچارلىشىۋالدى. يەنىلا سەككىزىنچى نەشىرىدىن 10-نەشىرىگىچە ياخشى چىققان. ئىقتىدارلىرىمۇ تولۇق ئىدى. يېڭى كۆزنەككە ئالماشقاندىن بېرى ئامالنىڭ يوقىدا بەزى تېلىفۇنلارنىڭ روملىرىنى ئۆزگەرتىش ئۈچۈن ئامالسىز قاچىلايمەن. ئىشىمنى قىلىپ بولۇپلا ئۆچۈرىمەن. 				<p class="author">
+					<strong>pansat</strong>
+				يوللانغان ۋاقتى 2014-4-19 22:55:23	</p>
+			<h3></h3>
+		ياخشىلىنىش بەك كۆپ<br />
+			<div class="page">
+		بەت: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	:
+	<a href="./izdinish58034.html" target="_blank"><strong>Ubuntu دا java مۇھىتى ھازىرلاش</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="./www.discuz.net">Discuz! X3.2 Archiver</a></strong>(<a title="ULP:20141102 by Nurqut Team" target="_blank" href="./www.nurqut.net">NurQut Team</a>)   © 2001-2013 <a target="_blank" href="./www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

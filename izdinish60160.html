@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143956760-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-143956760-1');
+</script>
+
+<base href="./" />
+<title>Linux تىكى Bash يوچۇقى ھەققىدە</title>
+<link href="./izdinish60160.html" rel="canonical" />
+<meta name="keywords" content="Linux تىكى Bash يوچۇقى ھەققىدە ئىزدىنىش تور بېكىتى" />
+<meta name="description" content="Linux تىكى Bash يوچۇقى ھەققىدە ئىزدىنىش تور بېكىتى ,ئىزدىنىش تور بېكىتى" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	@font-face {
+		font-family: "Alpida Unicode System";
+		font-weight: normal;
+		src:url(/aus.eot); /* IE */
+		src: local("Alpida Unicode System"), url("/aus.ttf") format("TrueType"); /* non-IE */
+	}
+	* { word-wrap: keep-all; }
+	body {direction:rtl;font-family: alpida unicode system, ukij tuz tom, Verdana;FONT-SIZE: 15px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>ئىزدىنىش تور بېكىتى</h2>
+</center><div id="nav">
+	<a href="./">ئىزدىنىش مۇنبىرى</a> › <a href="./?fid-113.html">ﻣﻪﺷﻐﯘﻻﺕ سىستېمىسى</a> › Linux تىكى Bash يوچۇقى ھەققىدە</div>
+
+<div id="content">
+			<p class="author">
+					<strong>GoodLuck</strong>
+				يوللانغان ۋاقتى 2014-10-10 15:08:48	</p>
+			<h3>Linux تىكى Bash يوچۇقى ھەققىدە</h3>
+		يېقىندا بىز ئاسىراۋاتقان لىنۇكس مۇلازىمىتىرلىرىدا Bash يوچۇقى بارلىقىنى، جىددى ياماش كېرەكلىكى ھەققىدە ئېلخەت تاپشۇرىۋالغاندىن كېيىن، شۇنى قىلىمەن دەپ توپ توغرا بىر ھەپتە پالاكەت باستى. <br />
+Bash يوچۇقى ھەققىدە بۇ ئۇلىنىشتىن كۆرۈڭ<br />
+<br />
+بۇ تېمىنى يېزىشتىن مەقسىتىم ماڭا ئوخشاش ھاماقەتلىك قىلىپ، مەندەك ھەپتە ئاۋارە بولىۋالمىسۇن دېدىم. <br />
+ئېلخەتتە تۆۋەندىكى بۇيرۇقنى كىرگۈزسەك :env x='() { :;}; echo vulnerable' bash -c "echo this is a test""vulnerable" ۋە "this is a test" ئۇچۇرى كۆرۈنسە Bash يوچۇقى مەۋجۇت ئىكەنلىكى، دەرھال ياماش كېرەكلىكى ئەسكەرتىلگەن بولۇپ، بىزنىڭ ئاسىرىشىمىزدىكى 6 مۇلازىمىتىرنىڭ ھەممىسىدە مۇشۇ خاتالىق كۆرۈلگەچكە، يېڭى نەشىردىكى Bash نى قاچىلىسام يەنىلا شۇنداق، قانداق بولدى بۇنى ئۆچۈرۈپ باقسامچۇ دەپ ئويلاپ rpm ئارقىلىق مەجبۇرى ئۆچۈرۈپ تاشلاپ، ئاندىن يۇقارقى بۇيرۇقنى بەرسەم يوچۇق ئۇچۇرى كۆرۈنمىدى، شۇنىڭ بىلەن مۇلازىمىتىردىن چېكىنىپ، يوچۇق يامالدى دەپ ئېلخەت قايتۇرىۋېتىپ ئىشىمنى قىلدىم. چاتاق باشلاندى، مۇلازىمتىرغا چىقالمىدىم، شۇ چاغدىلا Bash قىستۇرمىسىنىڭ لىنۇكس بۇيرۇق بىر تەرەپ قىلىش دېتالى ئىكەنلىكى ئېسىمگە كېلىپ، يىراقتىن كونترول قىلغىلى بولمىسا مۇلازىمىتىرخانىدا ئامال بوپ قالا دېگەن ئۈمىد بىلەن، مۇلازىمىتىرخانىغا كىرىپ بىۋاستە ئاچساممۇ ئامال بولماي، سىستېمىنى قايتا قاچىلاشقا توغرا كېلىپ، ھەممە ئىشنى پۈتتۈرگىچە قاق ھەپتە ئاۋارە بولدۇم. <br />
+<br />
+ھاسىل قىلغان تەجىربەم: لىنۇكستا ئوخشاش نەشىر دائىرسىدە يەنى 5.x ۋە 6.x نەشىر دائىرسىدە پىلاستىنكا بىلەن سىستېما قاچىلىغاندا نەشىر يېڭىلاش تۈرىنى تاللىساق شۇ نەشىرنىڭ ئەڭ يېڭىسىغا يېڭىلاپ بېرىدىكەن ھەمدە مۇلازىمىتىردىكى ھىچقانداق ھۆججەت ۋە مۇھىت تەسىرگە ئۇچىرىمايدىكەن. مەن باشقۇرىۋاتقان چاتاق چىققان مۇلازىمىتىرنىڭ تۆتى 虚拟机 بولۇپ ئۇنىڭ ئىشى ئاسانغا توختىدى، يەنە ئىككىسى 主机 بولۇپ بۇنىڭ بىرسى 6.1 يەنە بىرسى 5 نىڭ بىر نەشىرىكەن. مەندىكى سىستېما پلاستىنكىسى 6.4 بولۇپ، 6.1 قاچىلانغان مۇلازىمىتىرغا سېلىپ ھىچقانچە قىينالمايلا 6.4 كە كۆتۈرۈپلا، مۇھىتلارنى قوزغىتىپ قۇتۇلدۇم. <br />
+يەنە بىرسىگە بۇنى سالسام 5.x تىن 6.4 كە نەشىر يېڭىلىماي يېڭى قاچىلايدىكەنمىز، بۇ مۇلازىمىتىردا ساندانمۇ باتتى، شۇنداق قىلىپ ھېلى تور كارتىسىنى تونىماي ھېلى بىر نېمە بوپ دېگەندەك نەچچە قېتىم قايتا قاچىلاپ، مۇلازىمىتىرخانىدىكى ھاۋا تەڭشىگۈچنىڭ ئاۋازىدىن ساراڭ بولاي دېگەندە ئىشىمنى تۈگىتىپ، مۇھىت ساندانلارنى قاچىلاپ نورمال ھالەتكە ئەكەلگىچە دات دەپ كەتتىم. <br />
+<br />
+مەندىن پەندى-نەسىھەت: Bash قىستۇرمىسىغا قالايمىقان مەشغۇلات قىلمىغۇلۇقكەن، يېڭىلاش زۆرۆر بولسا سىستېما نەشىرىگە ئۇدۇل كېلىدىغان Bash قىستۇرمىدىنى ئورگان تور بېكىتىدىن تاپقاندىن كېيىن قاچىلاش زۆرۆركەن.				<p class="author">
+					<strong>istikbal</strong>
+				يوللانغان ۋاقتى 2014-10-10 15:30:08	</p>
+			<h3></h3>
+		ئۇيغۇر خەۋەر تورى مۇلازىمىتىرىمۇ centos مەشغۇلات سىستىمىسىدا مېڭىۋاتىدۇ.بۇ ئۇچۇر ماڭىمۇ كەپتىكەن .Bash نى يىڭىلىۋەتتىم . مەشغۇلات سىستىمىسىنىڭ نەشىرىگە بەكرەك دىققەت قىلىپ يىڭىلىساق ئاساسەن مەسىلە چىقمايدىكەن<br />
+http://www.uynews.com   تور سۈرئىتىمۇ خېلى يامان ئەمەس كىتىپ بېرىۋاتىدۇ.				<p class="author">
+					<strong>istikbal</strong>
+				يوللانغان ۋاقتى 2014-10-10 15:37:59	</p>
+			<h3></h3>
+		ئۇيغۇر خەۋەر تورى مۇلازىمىتىرىمۇ centos مەشغۇلات سىستىمىسىدا مېڭىۋاتىدۇ.بۇ ئۇچۇر ماڭىمۇ كەپتىكەن .Bash نى يىڭىلىۋەتتىم . مەشغۇلات سىستىمىسىنىڭ نەشىرىگە بەكرەك دىققەت قىلىپ يىڭىلىساق ئاساسەن مەسىلە چىقمايدىكەن<br />
+http://www.uynews.com   تور سۈرئىتىمۇ خېلى يامان ئەمەس كىتىپ بېرىۋاتىدۇ.				<p class="author">
+					<strong>jaggiwar</strong>
+				يوللانغان ۋاقتى 2014-10-10 18:22:30	</p>
+			<h3></h3>
+		istikbal يوللىغان ۋاقتى  2014-10-10 15:37 static/image/common/back.gif<br />
+ئۇيغۇر خەۋەر تورى مۇلازىمىتىرىمۇ centos مەشغۇلات سىستىمى ...<br />
+<br />
+www.adilsoda.com  ئېچىلمايتىيا ؟ خەۋەر تورى ئېچىلىپ كېتىدىكەن 				<p class="author">
+					<strong>istikbal</strong>
+				يوللانغان ۋاقتى 2014-10-14 10:16:19	</p>
+			<h3></h3>
+		jaggiwar يوللىغان ۋاقتى  2014-10-10 18:22 static/image/common/back.gif<br />
+www.adilsoda.com  ئېچىلمايتىيا ؟ خەۋەر تورى ئېچىلىپ كېتىدىكە ...<br />
+<br />
+icp تۈپەيلىدىن تاقاپ قۇيۇشقا مەجبۇر بولدۇق.			<div class="page">
+		بەت: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	:
+	<a href="./izdinish60160.html" target="_blank"><strong>Linux تىكى Bash يوچۇقى ھەققىدە</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="./www.discuz.net">Discuz! X2.5 Archiver</a></strong>   © 2001-2012 <a target="_blank" href="./www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

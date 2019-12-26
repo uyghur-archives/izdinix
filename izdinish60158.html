@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143956760-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-143956760-1');
+</script>
+
+<base href="./" />
+<title>Linux تا قۇرۇلغا PHP مۇھىتىنىڭ Forbidden خاتالىقىنى تۈزىتىش</title>
+<link href="./izdinish60158.html" rel="canonical" />
+<meta name="keywords" content="Linux تا قۇرۇلغا PHP مۇھىتىنىڭ Forbidden خاتالىقىنى تۈزىتىش ئىزدىنىش تور بېكىتى" />
+<meta name="description" content="Linux تا قۇرۇلغا PHP مۇھىتىنىڭ Forbidden خاتالىقىنى تۈزىتىش ئىزدىنىش تور بېكىتى ,ئىزدىنىش تور بېكىتى" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	@font-face {
+		font-family: "Alpida Unicode System";
+		font-weight: normal;
+		src:url(/aus.eot); /* IE */
+		src: local("Alpida Unicode System"), url("/aus.ttf") format("TrueType"); /* non-IE */
+	}
+	* { word-wrap: keep-all; }
+	body {direction:rtl;font-family: alpida unicode system, ukij tuz tom, Verdana;FONT-SIZE: 15px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>ئىزدىنىش تور بېكىتى</h2>
+</center><div id="nav">
+	<a href="./">ئىزدىنىش مۇنبىرى</a> › <a href="./?fid-113.html">ﻣﻪﺷﻐﯘﻻﺕ سىستېمىسى</a> › Linux تا قۇرۇلغا PHP مۇھىتىنىڭ Forbidden خاتالىقىنى تۈزىتىش</div>
+
+<div id="content">
+			<p class="author">
+					<strong>GoodLuck</strong>
+				يوللانغان ۋاقتى 2014-10-10 14:38:38	</p>
+			<h3>Linux تا قۇرۇلغا PHP مۇھىتىنىڭ Forbidden خاتالىقىنى تۈزىتىش</h3>
+		مەن ئىشلەتكەن مەشخۇلات سىستېمىسى ： CentOS release 6.3<br />
+مەشخۇلات سىستېمىسىنى كۆرۈش بۇيرۇقى: head -n 1 /etc/issue<br />
+<br />
+لىنۇكس مۇلازىمىتىرىغا PHP مۇھىتى ھازىرلاش ئىھتىياجى تۇغۇلۇپ، PHP نى Apache غا يۈكلەپ مۇلازىمەتنى قۇرىۋالدىم، باش بەت نورمال ئېچىلغاندىن باشقا بارلىق تارماق بەت ۋە چۈشۈرىدىغان ماتېرىياللارغا كەلگەندە <br />
+Forbidden <br />
+You don't have permission to access<br />
+خاتالىق چىقىپ ھىچ ئامال بولمىدى، توردىن ئاختۇرۇش جەريانىدا httpd.conf ھۆججىتىنى تەھرىرلەش ئۇسۇللىرى بەك جىق تونۇشتۇرۇلغان بولسىمۇ ھىچقايسىسى كارغا كەلمەي، ئۇنى بۇنى قىلىپ يۈرۈپ ھەل قىلىش چارىسىنىمۇ تاپقان بولدۇم. <br />
+تۆەندىكى بۇيرۇقنى بەرگەندىن كېيىن مەسىلە ھەل بولدى:chcon -R -t httpd_sys_content_t /var/www/htmlيۇقارقى كودتىكى /var/www/html بولسا تور بېكەتنىڭ باش مۇندەرىجىسىنى كۆرسىتىدۇ. <br />
+ئەسكەرتىش: بۇ ئامال ھەممە مۇھىتقا ماس كېلىشى ناتايىن، httpd.conf ھۆججىتىنى تەھرىرلەش ئامالى بەك كۆپ تونۇشتۇرۇلغىنىغا قارىغاندا، بەزى مۇھىتلاردا httpd.conf ھۆججىتىنى تەھرىرلىدەك مەسىلە ھەل بولىشى مۇمكىن. ئوخشاش مەسىلىگە يولۇققانلار ئۆزۈڭلارنىڭ ئەھۋالىغا قاراپ ئىش تۇتساڭلار بولىدۇ. 				<p class="author">
+					<strong>qassap</strong>
+				يوللانغان ۋاقتى 2014-10-10 16:17:32	</p>
+			<h3></h3>
+		چۈشەنمىدىم:lol				<p class="author">
+					<strong>GoodLuck</strong>
+				يوللانغان ۋاقتى 2014-10-10 17:53:46	</p>
+			<h3></h3>
+		ئوبدان بوپتۇ:lol				<p class="author">
+					<strong>MSM</strong>
+				يوللانغان ۋاقتى 2014-10-10 18:46:49	</p>
+			<h3></h3>
+		مۇشۇ لىنىكۇس سىستېمىسىنى ئىشلىتىپ باقماپتىمەن				<p class="author">
+					<strong>begmurad</strong>
+				يوللانغان ۋاقتى 2014-10-11 19:38:27	</p>
+			<h3></h3>
+		مەن بىر يازمىدا لىنۇكىس مۇلازىمىتىرى ئۈچۈن سېنت ئوئەس نى ئىشلىتىپ باقتىم ئەمما ئىشلەتكۈچىلەر سانى بۇيىچە بولغاندا يەنىلا ئۇبۇنتۇغا كۈچكەن ياخشىمىكىن دىگىنىنى كۆرگەن، ئۈزۈمنى ئىلىپ ئېيتسام ھازىرغىچە مۇلازىمىتىر ئىشلىتىپ باقمىدىم بەلكىم ئۇنداق ئىھتىياج تۇغۇلمىغاندۇ، ئەمما ئۇبۇنتۇ ئۈستەل يۈزى سىستېمىسىنى خېلى يامان ئەمەس ئىشلىتەلەيمەن، بۇ ھەقتە ئىزدىنىشقا يازما يېزىپ باقاي دەپمۇ ئويلىغان ئەمما ئىزدىنىشتىكى قېرىنداشلارنىڭ قىزغىنلىقى قانچىلىك بىلمىدىم.				<p class="author">
+					<strong>GoodLuck</strong>
+				يوللانغان ۋاقتى 2014-10-13 14:46:11	</p>
+			<h3></h3>
+		@begmurad<br />
+مەن RedHat بىلەن centOS نىلا ئىشلىتىپ باقتىم، ئادەتتى كۆرۈنمە يۈز كۆزنىكىدە مەشغۇلات قىلمايمەن، مۇلازىمىتىرنى يىراقتىن باشقۇرىدىغان بولغاچقا، بۇيرۇق كۆزنىكى ئىشلىتىپ كۆنۈپ قاپتىمەن. 			<div class="page">
+		بەت: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	:
+	<a href="./izdinish60158.html" target="_blank"><strong>Linux تا قۇرۇلغا PHP مۇھىتىنىڭ Forbidden خاتالىقىنى تۈزىتىش</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="./www.discuz.net">Discuz! X2.5 Archiver</a></strong>   © 2001-2012 <a target="_blank" href="./www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

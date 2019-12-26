@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143956760-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-143956760-1');
+</script>
+
+<base href="./" />
+<title>oracle دا تەرتىپ بىر تەرەپ قىلىش مەسىلىسى-ئىزدىنىش تورى</title>
+<link href="./izdinish44051.html" rel="canonical" />
+<meta name="keywords" content="ئىزدىنىش تورى  oracle دا تەرتىپ بىر تەرەپ قىلىش مەسىلىسى" />
+<meta name="description" content="ئىزدىنىش تورى  oracle دا تەرتىپ بىر تەرەپ قىلىش مەسىلىسى ,ئىزدىنىش تور بېكىتى" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	@font-face {
+		font-family: "Alpida Unicode System";
+		font-weight: normal;
+		src:url(/aus.eot); /* IE */
+		src: local("Alpida Unicode System"), url("/aus.ttf") format("TrueType"); /* non-IE */
+	}
+	* { word-wrap: keep-all; }
+	body {direction:rtl;font-family: alpida unicode system, ukij tuz tom, Verdana;FONT-SIZE: 15px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>ئىزدىنىش تور بېكىتى</h2>
+</center><div id="nav">
+	<a href="./">ئىزدىنىش مۇنبىرى</a> › <a href="./?fid-115.html">پروگرامما تىلى</a> › oracle دا تەرتىپ بىر تەرەپ قىلىش مەسىلىسى</div>
+
+<div id="content">
+			<p class="author">
+					<strong>GoodLuck</strong>
+				يوللانغان ۋاقتى 2011-12-4 18:16:18	</p>
+			<h3>oracle دا تەرتىپ بىر تەرەپ قىلىش مەسىلىسى</h3>
+		<p>ئادەتتە MySQ ياكى SqlServer  دا بىر Id بېكىتىپ شۇنى باش كونۇپكا يەنى 主键  قىلغان بولساق، بۇ Id غا كېيىن قىممەت بېرىشىمىزنىڭ زۆرۆرىيىتى بوق، يېڭى ئۇچۇر قاتساق بۇ Id نىڭ قىممىزى ئۈزلۈكسىز ھالدا، ئاپتوماتىك قوشۇلۇپ ماڭىدۇ،  بۇنى كۆپىنچىمىز بىلىمىز. لېكىن Oracle دا ئىش بۇنداق ئەمەسكەن، بۇنىڭ ئۈچۈن تەرتىپ قۇرۇپ، شۇ قۇرۇلوغان تەرتىپنى ئىشلىتىدىكەنمىز. </p><br />
+<p>مەسىلەن تۆۋەندىكى كودقا قارايلى: </p><br />
+<p>create sequence SEQ</p><br />
+<p>increment by 1</p><br />
+<p>start with 1</p><br />
+<p>nomaxvalue</p><br />
+<p>minvalue 1</p><br />
+<p>nocycle</p><br />
+<p>cache 50</p><br />
+<p><span style="color:#e53333;">@misran  ماۋۇ تەھرىرلىگۈچنىڭ كود ھالەتتە كۆرسىتىش ئىقتىدارى يوقمۇ ياكى مەن بىلمىدىممۇ</span></p><br />
+<p>دېمەك يۇقارقى كودتا SEQ نامىدا بىر تەرتىپ قويىۋالدۇق، كېيىن مەلۇم Id غا قىممەت بەرمەكچى بولساق SEQ.nextval ئۇسۇلى بويىچە قىممەت بېرىدىكەنمىز. </p><br />
+<p>مەن ھەل قىلماقچى بولغان مەسىلە:  بۇ خىل ئۇسۇلدا مەلۇم بىر جەدۋەلدىكى Id غا قىممەت بېرىپ بولغاندىن كېيىن، يەنە بىر جەدۋەلگە SEQ.nextval  ئارقىلىق قىممەت بەرسەك، ئالدىنقى جەدۋەلگە بەرگەن قىممەتنىڭ داۋامىدىن باشلاپ، نۆۋەتتىكى جەدۋەلگە قىممەت بېرىدىكەن. بۇنداق بولغاندا Id دا قىممەت ئاتلاپ كېتىش (يەنى تەرتىپلىك بولماسلىق، مەسىلەن 10 نىڭ كەينىدىن 55 كېلىپ قېلىش) مەسىلى كېلىپ چىقىدىكەن.  بۇنىڭ ئۈچۈن ھەر بىر جەدۋەلگە بىر دانە تەرتىپ قۇرۇشىمىز كېرەكمۇ ياكى، باشقا ئۇسۇل بارمۇ؟ </p><br />
+<p>ئۇستازلار يول كۆرسەتكەن بولساڭلار .</p>				<p class="author">
+					<strong>kamandaz</strong>
+				يوللانغان ۋاقتى 2011-12-4 23:36:22	</p>
+			<h3></h3>
+		IDنى نېمىشقا چوقۇم رەت تەرتىپ بويىچە كەلمىسە بولمامدا؟ ID پەقەت بىردىن بىر خاسلىقنى ئىپادىلىسىلا بولمىدىمۇ؟ ئەگەر چوقۇم رەت تەرتىپ بويىچە قىلىمەن دېسەڭلار پروگرامما تىلى بىلەن Idراۋۇتىدىن بىرنى قۇرۇپ شۇنى IDغا كىرگۈزۈپ ئىشلەتسىڭىز بولىدۇ. ئادەتتە Java بىلەن C# تا بۇ زاۋۇت تەمىنلەگلىك. بۇنى UUID دەپ ئاتايدۇ String تىپىدا.				<p class="author">
+					<strong>kamandaz</strong>
+				يوللانغان ۋاقتى 2011-12-4 23:38:44	</p>
+			<h3></h3>
+		ئادەتتە IDنى  ئاپتۇماتىك قوشۇپ ماڭىدىغان قىلغاندىن. UUID ئەۋزەلرەك .				<p class="author">
+					<strong>GoodLuck</strong>
+				يوللانغان ۋاقتى 2011-12-5 10:12:54	</p>
+			<h3></h3>
+		<blockquote>2- قەۋەتتىكى kamandazنىڭ يازمىسىدىن نەقىل <br /><br />
+ئادەتتە IDنى ئاپتۇماتىك قوشۇپ ماڭىدىغان قىلغاندىن. UUID ئەۋزەلرەك . </blockquote><br />
+مەن UUID  نى ئىشلىتىپ باقماپتىكەنمەن، مۇمكىن بولسا مۇشۇ ھەقتە مىساللىرى بىلەن بىر چەشەنچە بېرەمسىز؟<br />				<p class="author">
+					<strong>kamandaz</strong>
+				يوللانغان ۋاقتى 2011-12-5 13:45:15	</p>
+			<h3></h3>
+		<blockquote>3- قەۋەتتىكى goodluckنىڭ يازمىسىدىن نەقىل <br /><br />
+<blockquote>2- قەۋەتتىكى kamandazنىڭ يازمىسىدىن نەقىل <br /><br />
+ئادەتتە IDنى ئاپتۇماتىك قوشۇپ ماڭىدىغان قىلغاندىن. UUID ئەۋزەلرەك . </blockquote><br />
+مەن UUID  نى ئىشلىتىپ باقماپتىكەنمەن، مۇمكىن بولسا مۇشۇ ھەقتە مىساللىرى بىلەن بىر چەشەنچە بېرەمسىز؟<br /><br />
+ </blockquote><br />
+<p>ئادەتتە ساندان تەرەپتە IDنى (varchar(35 ئۇزۇنلىقتا تەڭشەپ ئۇنى 主键 قىلىپ تەڭشىگەندىن كېيىن .  Java ياكى C# تا پروگرامما يازغاندا UUID ھاسىل قىلىپ شۇنى ID غا ساقلىسىڭىز بولىدۇ. </p><br />
+<p>java دا UUID ئادەتتە util بوقچىسىنىڭ ئىچىدە بولىدۇ.   يەنە   util.UUID دېگەن تۈرشۇ.</p><br />
+<p>بۇنى ئىشلەتكەندە UUID نىڭ randomUUID دېگەن مىتوتى ئارقىلىق قۇرسىڭىز بولىدۇ.</p><br />
+<p>UUID uuid=UUID.randomUUID بۇ ئارقىلىق uuid غا ئىرىشىمىز ئاندىن بۇنى String غا ئايلاندۇرۇپ  ساندان دېكى id غا ساقلىساق بولىدۇ.</p><br />
+<p> </p><br />
+<p>C# تا UUIDغا  ()System.Guid.NewGuid ئارقىلىق ئىرىشىمىز. ئاندىن بۇنى String غا ئايلاندۇرۇپ سانداندېكى id غا ساقلىساق بولىدۇ.</p><br />
+<p> </p><br />
+<p>ئۇنىڭدىن باشقا نۇرغۇنلىغان 3-تەرەپ پروگگىرامما ئاچقۇچىلارمۇ UUID تەمىنلىگەن. سىز قايسىنى ئىشلەتسىڭىز بولاۋىرىدۇ. پەرق چوڭ ئەمەس.</p><br />
+<p> </p><br />
+<p>ھازىر مەيلى oracle شىركىتى بولسۇن، مەيلى microsoft بولسۇن، ياكى google بولسۇن ھەممىسى مۇشۇ UUID نى ئىشلىتىشنى تەۋسىيە قىلىدۇ. بىخەتەرلىكىمۇ ساندان ئاپتۇماتىك قۇشۇپ ھاسىللىغان id دىن كۆپ يۇقىرى.  </p>				<p class="author">
+					<strong>GoodLuck</strong>
+				يوللانغان ۋاقتى 2011-12-5 17:14:37	</p>
+			<h3></h3>
+		بىلۋالدىم، رەھمەت سىزگە .			<div class="page">
+		بەت: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	:
+	<a href="./izdinish44051.html" target="_blank"><strong>oracle دا تەرتىپ بىر تەرەپ قىلىش مەسىلىسى</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="./www.discuz.net">Discuz! X2.5 Archiver</a></strong>   © 2001-2012 <a target="_blank" href="./www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

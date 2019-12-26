@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143956760-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-143956760-1');
+</script>
+
+<base href="./" />
+<title>سىز (bug)خاتالىق تېپىشقا ئامراق پىروگىراممېرمۇ-ئىزدىنىش تورى</title>
+<link href="./izdinish58710.html" rel="canonical" />
+<meta name="keywords" content="ئىزدىنىش تورى  سىز (bug)خاتالىق تېپىشقا ئامراق پىروگىراممېرمۇ" />
+<meta name="description" content="ئىزدىنىش تورى  سىز (bug)خاتالىق تېپىشقا ئامراق پىروگىراممېرمۇ ,ئىزدىنىش تور بېكىتى" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	@font-face {
+		font-family: "Alpida Unicode System";
+		font-weight: normal;
+		src:url(/aus.eot); /* IE */
+		src: local("Alpida Unicode System"), url("/aus.ttf") format("TrueType"); /* non-IE */
+	}
+	* { word-wrap: keep-all; }
+	body {direction:rtl;font-family: alpida unicode system, ukij tuz tom, Verdana;FONT-SIZE: 15px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>ئىزدىنىش تور بېكىتى</h2>
+</center><div id="nav">
+	<a href="./">ئىزدىنىش مۇنبىرى</a> › <a href="./?fid-115.html">پروگرامما تىلى</a> › سىز (bug)خاتالىق تېپىشقا ئامراق پىروگىراممېرمۇ</div>
+
+<div id="content">
+			<p class="author">
+					<strong>karakhan07</strong>
+				يوللانغان ۋاقتى 2014-6-9 16:48:31	</p>
+			<h3>سىز (bug)خاتالىق تېپىشقا ئامراق پىروگىراممېرمۇ</h3>
+		<?php<br />
+$conn=mysql_connect('127.0.0.1','root','123');<br />
+if(!$conn){<br />
+        die("sandangha ulanmidi:".mysql_error());        <br />
+}<br />
+mysql_select_db('sinaq',$conn);<br />
+mysql_query("set names 'UTF-8'");<br />
+$sql="select * from tb_sinaq order by id desc";<br />
+$result=mysql_query($sql);<br />
+if(!$result){<br />
+        echo"sql xataliqi".mysql_error();<br />
+}<br />
+$num=mysql_num_rows($result);<br />
+$pagesize=2;<br />
+$page=$_GET['page'];<br />
+if(empty($page)){<br />
+        $page=1;<br />
+}<br />
+$totalpage=ceil($num/$pagesize);<br />
+$begin=($page-1)*$pagesize;<br />
+$sql=$sql."limit $begin,$pagesize";<br />
+$result="mysql_query($sql)";<br />
+echo "<center><table>";<br />
+while ($row=mysql_fetch_array($result)){<br />
+        echo "<tr><td>".$row['name']."</td><td>".$row['sex']."</td></tr>";<br />
+}<br />
+echo "</table></center>";<br />
+?><br />
+<?php <br />
+if($page==1){<br />
+        echo "bashnet";<br />
+}<br />
+?><br />
+بۇ كودتىن تۆۋەندىكىدەك خاتالىق چىقتى<br />
+Warning: mysql_fetch_array(): supplied argument is not a valid MySQL result resource in C:\AppServ\www\sinaq\betke ayrish.php on line 24<br />
+bashnet<br />
+<br />
+<br />
+ئۆزۈم توردىن ماتېريال ئىزەپ ئۆگىنىۋاتقان ، شۇڭا ئىزدىنىش توردىكى ئۇستازلارنىڭ ياردەم قىلشىنى  ئۈمىد قىلىمەن.				<p class="author">
+					<strong>karakhan07</strong>
+				يوللانغان ۋاقتى 2014-6-9 18:47:18	</p>
+			<h3></h3>
+		ئەگەر مۇنۇ مەسىلگە ئوخشاش ئەمەلىي مىساللار ئارقىلق دەرس سۆزلەپ بېردىغان ، بىلمىگەن جايلىرىمنى ئەستايدىل چۈشەندۈرۈپ قويىدىغان ئۇستاملار بولسا ،مۇۋاپىق ھەق تۆلەپ ئۆگىنىمەن.ئۆزۈم ھورۇن بولساممۇ كود يېزىشقا كەلگەندە بەك تېرىشچان بالىمەن، ئۇستاملار بىلەن ئوبدان چىقىشىپ قېلىشقا ئىشەنچىم بار .خالىسىڭىز ماڭا خەت قالدۇرۇڭ!				<p class="author">
+					<strong>atiyan</strong>
+				يوللانغان ۋاقتى 2014-6-9 19:09:36	</p>
+			<h3></h3>
+		$result="mysql_query($sql)";بۇنى$result=mysql_query($sql);بۇنداق يېزىڭ!$row=mysql_fetch_arrayماۋۇنى$row=mysql_fetch_rowماۋۇنىڭغا ئۆزگەرتىڭ.				<p class="author">
+					<strong>karakhan07</strong>
+				يوللانغان ۋاقتى 2014-6-9 21:14:52	</p>
+			<h3></h3>
+		atiyan يوللىغان ۋاقتى  2014-6-9 19:09 static/image/common/back.gif<br />
+بۇنىبۇنداق يېزىڭ!ماۋۇنىماۋۇنىڭغا ئۆزگەرتىڭ.<br />
+<br />
+جاۋابىڭىزغا چىن كۆڭلۈمدىن رەھمەت ئېيتىمەن ،بىراق خاتالىق ئوڭشالمىدى.ئەپسۇس!$sql=$sql."limit $begin,$pagesize";ماۋۇنى ئەسلى تۆۋەندىكى ئۇسۇلدا يازسسىلا بولىدىكەن$sql = "select *from tb_sinaq limit $begin,$pagesize";				<p class="author">
+					<strong>atiyan</strong>
+				يوللانغان ۋاقتى 2014-6-9 22:40:19	</p>
+			<h3></h3>
+		karakhan07 يوللىغان ۋاقتى  2014-6-9 21:14 static/image/common/back.gif<br />
+جاۋابىڭىزغا چىن كۆڭلۈمدىن رەھمەت ئېيتىمەن ،بىراق خات ...<br />
+<br />
+مەن ئۈستىگە دېققەت قىلماپتىمەن ئەمەسما؟!:lol 				<p class="author">
+					<strong>tagh</strong>
+				يوللانغان ۋاقتى 2014-6-11 20:35:33	</p>
+			<h3></h3>
+		(bug دېگەن نېمە ؟سىز ئاۋۇ 1.2،،،10،،،دەپ شۇنداق يازامدۇ كود دېگەننى؟تەپەككۇر شەكلى قانداق بۇلۇش كېرەك؟<br />
+ئىنگىلىزچە بىلمىسە بولمامدۇ نېمە ؟				<p class="author">
+					<strong>karakhan07</strong>
+				يوللانغان ۋاقتى 2014-6-12 21:58:43	</p>
+			<h3></h3>
+		tagh يوللىغان ۋاقتى  2014-6-11 20:35 static/image/common/back.gif<br />
+(bug دېگەن نېمە ؟سىز ئاۋۇ 1.2،،،10،،،دەپ شۇنداق يازامدۇ كو ...<br />
+<br />
+bug ئىنگىلىزچە خاتالىق  دىگەن گەپ.  ئاڭلىسام پىروگراممېرلار ئارسىدا مودا بولۇۋېتىپتۇ .شۇڭا تېرناققا ئېلىپ قويدۇم.تەپەككۇر شەكلى ئاساسەن ماتىېماتكىدەك بولىدۇ دەپ ئويلايمەن. بېراق باشلانغۇچ سەۋيىسدە ماتىماتكا بېلمىڭىز بولسا پىروگىراممېرلارغا يېتەرلىك.چوقۇم ئېنگىلىزتىلى بىلىش شەرت ئەمەس ،ئەمما ئانچە مۇنچە بىلگەن ياخشى .چۈنكى كۆپىنچە  كودلار ئېنگىلزچە گەپ ياكى قىسقارتىلمىسى.<br />
+بۇ مېنىڭ ئۆگىنىش جەريانىدا ھېس قىلغانلىرىم<br />
+			<div class="page">
+		بەت: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	:
+	<a href="./izdinish58710.html" target="_blank"><strong>سىز (bug)خاتالىق تېپىشقا ئامراق پىروگىراممېرمۇ</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="./www.discuz.net">Discuz! X2.5 Archiver</a></strong>   © 2001-2012 <a target="_blank" href="./www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

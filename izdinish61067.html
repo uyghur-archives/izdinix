@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143956760-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-143956760-1');
+</script>
+
+<base href="./" />
+<title>ئاندرويىدتا Dialog نىڭ فونت خاسلىقىنى بېكىتىش</title>
+<link href="./izdinish61067.html" rel="canonical" />
+<meta name="keywords" content="ئاندرويىدتا Dialog نىڭ فونت خاسلىقىنى بېكىتىش ئىزدىنىش تور بېكىتى" />
+<meta name="description" content="ئاندرويىدتا Dialog نىڭ فونت خاسلىقىنى بېكىتىش ئىزدىنىش تور بېكىتى ,ئىزدىنىش تور بېكىتى" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	@font-face {
+		font-family: "Alpida Unicode System";
+		font-weight: normal;
+		src:url(/aus.eot); /* IE */
+		src: local("Alpida Unicode System"), url("/aus.ttf") format("TrueType"); /* non-IE */
+	}
+	* { word-wrap: keep-all; }
+	body {direction:rtl;font-family: alpida unicode system, ukij tuz tom, Verdana;FONT-SIZE: 15px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>ئىزدىنىش تور بېكىتى</h2>
+</center><div id="nav">
+	<a href="./">ئىزدىنىش مۇنبىرى</a> › <a href="./?fid-115.html">پروگرامما تىلى</a> › ئاندرويىدتا Dialog نىڭ فونت خاسلىقىنى بېكىتىش</div>
+
+<div id="content">
+			<p class="author">
+					<strong>GoodLuck</strong>
+				يوللانغان ۋاقتى 2014-12-5 11:14:01	</p>
+			<h3>ئاندرويىدتا Dialog نىڭ فونت خاسلىقىنى بېكىتىش</h3>
+		 بۇ يازمىنى ئاخىرىدا   GoodLuck تەھرىرلىگەن. ۋاقتى  2014-12-5 11:15  <br />
+<br />
+private void setDialogFontType(Dialog dialog){  <br />
+                Window window = dialog.getWindow();  <br />
+                View view = window.getDecorView();  <br />
+                setViewFontType(view);  <br />
+        } <br />
+<br />
+private void setViewFontType(View view) {  <br />
+                if(view instanceof ViewGroup){  <br />
+                        ViewGroup parent = (ViewGroup)view;  <br />
+                        int count = parent.getChildCount();  <br />
+                        for (int i = 0; i < count; i++){  <br />
+                                setViewFontType(parent.getChildAt(i));  <br />
+                        }  <br />
+                } else if(view instanceof TextView){  <br />
+                        TextView textview = (TextView)view;  <br />
+                        textview.setTypeface(type);  <br />
+                }  <br />
+        }بىرىنچى فونكىسىيەگە خەت نۇسخىسى تەڭشىمەكچى بولغان Dialog نى پارامىتىر قىلىپ بەرسەكلا بولىدۇ، بىرىنچى فونكىسىيە  ئىككىنچىسىنى تارتىپ ئىشلىتىدۇ. ئىككى فونكىسىيەنى بىرلەشتۈرىۋەتسەكمۇ بولىدۇ. <br />
+فونكىسىيەگە ئازراق ئۆزگەرتىش كىرگۈزۈش ئارقىلىق، فونتنىڭ باشقا خاسلىقلىرىنىمۇ تەڭشىۋالغىلى بولىدۇ. ئەزۋەيلەپ ئولتامىدىم				<p class="author">
+					<strong>chanaymen</strong>
+				يوللانغان ۋاقتى 2014-12-5 11:50:26	</p>
+			<h3></h3>
+		ئاندروئىدنى چانايدىكەنسىىز قېرىندىشىم. مەنمۇ چانايدىغان ئەپتىن بىرنى ياسىسام بولىتى، ئۈگىنىۋالاي ھە				<p class="author">
+					<strong>begmurad</strong>
+				يوللانغان ۋاقتى 2014-12-5 12:22:56	</p>
+			<h3></h3>
+		پىروگىرامما تىلىدىن ياخشىراق دەرسلىك بولسا ئۆگىنەي دىگەن.....				<p class="author">
+					<strong>GoodLuck</strong>
+				يوللانغان ۋاقتى 2014-12-5 13:26:10	</p>
+			<h3></h3>
+		chanaymen يوللىغان ۋاقتى  2014-12-5 11:50 static/image/common/back.gif<br />
+ئاندروئىدنى چانايدىكەنسىىز قېرىندىشىم. مەنمۇ چانايدى ...<br />
+<br />
+ياق، غىدىغىدەك بولدۇم تېخى. 				<p class="author">
+					<strong>Dihkanbay</strong>
+				يوللانغان ۋاقتى 2014-12-7 08:51:57	</p>
+			<h3></h3>
+		راس،مەن ئاددىي بىر ئىشتىن مەسلىھەت سورىۋالاي،چۈنكى مەن بۇ ساھەدە بىر ساۋاتسىز.<br />
+ئاندىرويىد سېستىمىنىڭ يېڭى نەشىرىنى قاچىلىغاندىن كىيىن يانفوننى زاۋۇت ھالىتىگە قايتۇرۇش مەشغۇلاتى قىلسا يېڭى نەشىر يوق بوپ كىتەمدۇ ياكى يېڭى نەشىر ساقلىنىپ تۇرامدۇ؟ رەھمەت！				<p class="author">
+					<strong>kokkaptar</strong>
+				يوللانغان ۋاقتى 2014-12-7 09:00:37	</p>
+			<h3></h3>
+		Dihkanbay يوللىغان ۋاقتى  2014-12-7 08:51 static/image/common/back.gif<br />
+راس،مەن ئاددىي بىر ئىشتىن مەسلىھەت سورىۋالاي،چۈنكى مە ...<br />
+<br />
+زاۋۇت ھالىتىگە قايتۇرۇش، پەقەت ئۈسكۈنىدىكى ئىشلەتكۈچى ھاسىل قىلغان ھەر خىل سانلىق مەلۇماتلار ۋە تەڭشەكلەرنى ئەسلىگە كەلتۈرۈشنى كۆرسىتىدۇ، سېستىمىنى يىڭىلىغان بولسڭىز،  بۇ يىڭىلاش، زاۋۇت ھالىتىگە قايتۇرۇشنى دائىرىسىگە كىرمەيدۇ. 				<p class="author">
+					<strong>GoodLuck</strong>
+				يوللانغان ۋاقتى 2014-12-7 09:22:51	</p>
+			<h3></h3>
+		كەپتەكامنىڭ گېپىنى قىسقارتىپ ئېيتساق يېڭى نەشىر ساقلىنىپ قالىدۇ.<br />
+يېڭى ئۆي كۆچكەندىن كېيىن، ئۆيىڭىز سەل مەينەت بوپ كەتسە، خوتۇن بىلەن ھە ھۇ دىيىشىپ تازلىق قىلغان بولسىڭىز، بۇرۇنقى  كونا ئۆيگە قايتىپ قاممىغاندەك ئىش. 				<p class="author">
+					<strong>Dihkanbay</strong>
+				يوللانغان ۋاقتى 2014-12-7 18:14:51	</p>
+			<h3></h3>
+		GoodLuck يوللىغان ۋاقتى  2014-12-07 09:22:51 static/image/common/back.gif<br />
+كەپتەكامنىڭ گېپىنى قىسقارتىپ ئېيتساق يېڭى نەشىر ساقلى<br />
+:lol:lol:lol<br />
+قىزىقارلىق قىلىپ چۈشەندۈرۈپ قويغىنىڭىزغا تەشەككۈر！…				<p class="author">
+					<strong>chanaymen</strong>
+				يوللانغان ۋاقتى 2014-12-8 14:00:43	</p>
+			<h3></h3>
+		GoodLuck يوللىغان ۋاقتى  2014-12-7 09:22 static/image/common/back.gif<br />
+كەپتەكامنىڭ گېپىنى قىسقارتىپ ئېيتساق يېڭى نەشىر ساقلى ...<br />
+<br />
+توي قىلمىغانلارچۇ قېرىندىشىم				<p class="author">
+					<strong>uyghur2014</strong>
+				يوللانغان ۋاقتى 2014-12-25 18:18:55	</p>
+					<p class="author">
+					<strong>GoodLuck</strong>
+				يوللانغان ۋاقتى 2014-12-26 10:30:36	</p>
+			<h3></h3>
+		uyghur2014 يوللىغان ۋاقتى  2014-12-25 18:18 static/image/common/back.gif<br />
+يۇقارقى كودنى تەپسىلى چۈشەندۈرەلەمسىز،نىمىشقا view تىر ...<br />
+<br />
+سىز ئاۋال ماڭا پروگرامما تىلىدا قانچىلىك سەۋىيەدە ئىكەنلىكىڭىزنى بايان قىلىپ بېرىڭ، مەن ئاندىن چۈشەندۈرەي.				<p class="author">
+					<strong>uyghur2014</strong>
+				يوللانغان ۋاقتى 2014-12-26 10:45:13	</p>
+				<div class="page">
+		بەت: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	:
+	<a href="./izdinish61067.html" target="_blank"><strong>ئاندرويىدتا Dialog نىڭ فونت خاسلىقىنى بېكىتىش</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="./www.discuz.net">Discuz! X2.5 Archiver</a></strong>   © 2001-2012 <a target="_blank" href="./www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

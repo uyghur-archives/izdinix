@@ -1,0 +1,646 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143956760-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-143956760-1');
+</script>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143956760-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-143956760-1');
+</script>
+
+<base href="./" />
+<title>Windows Phone 7.1 (مانگو) دا SQLSeerver CE ساندان ماڭدۇرغىلى بولىدۇ-ئىزدىنىش تورى</title>
+<link href="./izdinish44674.html" rel="canonical" />
+<meta name="keywords" content="ئىزدىنىش تورى  Windows Phone 7.1 (مانگو) دا SQLSeerver CE ساندان ماڭدۇرغىلى بولىدۇ" />
+<meta name="description" content="ئىزدىنىش تورى  Windows Phone 7.1 (مانگو) دا SQLSeerver CE ساندان ماڭدۇرغىلى بولىدۇ ,ئىزدىنىش تور بېكىتى" />
+<meta name="generator" content="Discuz! X3.2" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2013 Comsenz Inc." />
+<style type="text/css">
+	body {direction: rtl; font-family: Alpida Unicode System, UKIJ Tuz Tom, Microsoft Uighur, DejaVu Sans, Helvetica Neue, Segoe UI, Helvetica, Tahoma, Arial, sans-serif;FONT-SIZE: 15px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>ئىزدىنىش تور بېكىتى</h2>
+</center><div id="nav">
+	<a href="./">ئىزدىنىش مۇنبىرى</a> › <a href="./?fid-115.html">پروگرامما تىلى</a> › Windows Phone 7.1 (مانگو) دا SQLSeerver CE ساندان ماڭدۇرغىلى بولىدۇ</div>
+
+<div id="content">
+			<p class="author">
+					<strong>Baqka</strong>
+				يوللانغان ۋاقتى 2012-1-6 11:42:40	</p>
+			<h3>Windows Phone 7.1 (مانگو) دا SQLSeerver CE ساندان ماڭدۇرغىلى بولىدۇ</h3>
+		<div dir="rtl" align="center"><span style="font-size:18px;color:#e56600;"><strong>Windows Phone 7.1 (مانگو) دا SQLSeerver CE ساندان ماڭدۇرغىلى بولىدۇ</strong></span></div><br />
+<div dir="rtl"><a href="./2075593.html"><span style="color:#ffffff;">http://www.cnblogs.com/linzheng/archive/2011/06/08/2075593.html</span></a></div><br />
+<div dir="rtl"> </div><br />
+<div dir="rtl">Windows Phone نىڭ تۇنجى نەشىرى 7.0 دە يەرلىك ساندان قوللىمايدىغان بولۇپ، ساندان ئىشلەتمەكچى بولسا پەقەت ئۈچىنچى تەرەپ ساندان بۆلىكى ئىشلىتىشكىلا توغرا كېلىدۇ. Windows Phone نىڭ SQL Server CE يەرلىك ساندانى بولسا ماڭگودا يېڭىلانغان يېڭى ئالاھىدىلىكى بولۇپ، </div><br />
+<div dir="rtl">سىز قوللانما پروگراممىدا SQL Server CE ساندان ئىشلەتمەكچى بولسىڭىز چوقۇم Windows Phone7.1نىڭ API نى ئىشلىتىشىڭىز لازىم.<br /><br />
+تۈۋەندە بىر ئەمەلىي مىسال ئارقىلىق SQL Server CE نى قانداق ئىشلىتىش كۆرسىتىلىدۇ.<br /><br />
+(1) ساندان جەدۋىلى قۇرۇش ۋە سانداندىكى مەلۇمات ماسلىق خەت DateContent<br /><br />
+ئاۋال بىر خادىم ئۇچۇر جەدۋىلى قۇرىمىز، خادىم ئىسمى ۋە تۇنۇشتۇرۇشىنى ساقلاشقا ئىشلىتىلىدۇ، خىزمەتچى جەدۋىلىدە بىر ئاشار ID بولىدۇ.</div><br />
+<div dir="ltr">EmployeeTable.cs</div><br />
+<div dir="ltr" style="background-color:#ffffdc;"><br />
+<div><span style="color:#0000ff;">using</span><span style="color:#000000;"> System.Data.Linq.Mapping;<br /><br />
+</span><span style="color:#0000ff;">using</span><span style="color:#000000;"> System.ComponentModel;<br /><br />
+<br /><br />
+</span><span style="color:#0000ff;">namespace</span><span style="color:#000000;"> SQLServerDemo<br /><br />
+{<br /><br />
+    <br /><br />
+    </span><span style="color:#0000ff;">public</span><span style="color:#000000;"> </span><span style="color:#0000ff;">class</span><span style="color:#000000;"> EmployeeTable : INotifyPropertyChanged, INotifyPropertyChanging<br /><br />
+    {<br /><br />
+</span><span style="color:#008000;"> <div dir="rtl" align="left">      //خادىم جەدۋىلىنىڭ ئاشار ID سىنى بەلگىلەش، ئاچقۇچ قىلىندۇ.<br /><br />
+</div><br />
+</span><span style="color:#000000;">      </span><span style="color:#0000ff;">private</span><span style="color:#000000;"> </span><span style="color:#0000ff;">int</span><span style="color:#000000;"> _employeeId;<br /><br />
+<br /><br />
+      <br /><br />
+      </span><span style="color:#0000ff;">public</span><span style="color:#000000;"> </span><span style="color:#0000ff;">int</span><span style="color:#000000;"> EmployeeID<br /><br />
+      {<br /><br />
+            </span><span style="color:#0000ff;">get</span><span style="color:#000000;"><br /><br />
+            {<br /><br />
+                </span><span style="color:#0000ff;">return</span><span style="color:#000000;"> _employeeId;<br /><br />
+            }<br /><br />
+            </span><span style="color:#0000ff;">set</span><span style="color:#000000;"><br /><br />
+            {<br /><br />
+                </span><span style="color:#0000ff;">if</span><span style="color:#000000;"> (_employeeId </span><span style="color:#000000;">!=</span><span style="color:#000000;"> value)<br /><br />
+                {<br /><br />
+                  NotifyPropertyChanging(</span><span style="color:#800000;">"</span><span style="color:#800000;">EmployeeID</span><span style="color:#800000;">"</span><span style="color:#000000;">);<br /><br />
+                  _employeeId </span><span style="color:#000000;">=</span><span style="color:#000000;"> value;<br /><br />
+                  NotifyPropertyChanged(</span><span style="color:#800000;">"</span><span style="color:#800000;">EmployeeID</span><span style="color:#800000;">"</span><span style="color:#000000;">);<br /><br />
+                }<br /><br />
+            }<br /><br />
+      }<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">      //خادىم ئىسمى ھالقىسىنى ئېنىقلاش<br /><br />
+</div><br />
+</span><span style="color:#000000;">      </span><span style="color:#0000ff;">private</span><span style="color:#000000;"> </span><span style="color:#0000ff;">string</span><span style="color:#000000;"> _employeeName;<br /><br />
+<br /><br />
+      <br /><br />
+      </span><span style="color:#0000ff;">public</span><span style="color:#000000;"> </span><span style="color:#0000ff;">string</span><span style="color:#000000;"> EmployeeName<br /><br />
+      {<br /><br />
+            </span><span style="color:#0000ff;">get</span><span style="color:#000000;"><br /><br />
+            {<br /><br />
+                </span><span style="color:#0000ff;">return</span><span style="color:#000000;"> _employeeName;<br /><br />
+            }<br /><br />
+            </span><span style="color:#0000ff;">set</span><span style="color:#000000;"><br /><br />
+            {<br /><br />
+                </span><span style="color:#0000ff;">if</span><span style="color:#000000;"> (_employeeName </span><span style="color:#000000;">!=</span><span style="color:#000000;"> value)<br /><br />
+                {<br /><br />
+                  NotifyPropertyChanging(</span><span style="color:#800000;">"</span><span style="color:#800000;">EmployeeName</span><span style="color:#800000;">"</span><span style="color:#000000;">);<br /><br />
+                  _employeeName </span><span style="color:#000000;">=</span><span style="color:#000000;"> value;<br /><br />
+                  NotifyPropertyChanged(</span><span style="color:#800000;">"</span><span style="color:#800000;">EmployeeName</span><span style="color:#800000;">"</span><span style="color:#000000;">);<br /><br />
+                }<br /><br />
+            }<br /><br />
+      }<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">      //خادىم تۇنۇشتۇرۇلۇشى ھالقىسىنى ئېنىقلاش<br /><br />
+</div><br />
+</span><span style="color:#000000;">      </span><span style="color:#0000ff;">private</span><span style="color:#000000;"> </span><span style="color:#0000ff;">string</span><span style="color:#000000;"> _employeeDesc;<br /><br />
+<br /><br />
+      <br /><br />
+      </span><span style="color:#0000ff;">public</span><span style="color:#000000;"> </span><span style="color:#0000ff;">string</span><span style="color:#000000;"> EmployeeDesc<br /><br />
+      {<br /><br />
+            </span><span style="color:#0000ff;">get</span><span style="color:#000000;"><br /><br />
+            {<br /><br />
+                </span><span style="color:#0000ff;">return</span><span style="color:#000000;"> _employeeDesc;<br /><br />
+            }<br /><br />
+            </span><span style="color:#0000ff;">set</span><span style="color:#000000;"><br /><br />
+            {<br /><br />
+                </span><span style="color:#0000ff;">if</span><span style="color:#000000;"> (_employeeDesc </span><span style="color:#000000;">!=</span><span style="color:#000000;"> value)<br /><br />
+                {<br /><br />
+                  NotifyPropertyChanging(</span><span style="color:#800000;">"</span><span style="color:#800000;">EmployeeDesc</span><span style="color:#800000;">"</span><span style="color:#000000;">);<br /><br />
+                  _employeeDesc </span><span style="color:#000000;">=</span><span style="color:#000000;"> value;<br /><br />
+                  NotifyPropertyChanged(</span><span style="color:#800000;">"</span><span style="color:#800000;">EmployeeDesc</span><span style="color:#800000;">"</span><span style="color:#000000;">);<br /><br />
+                }<br /><br />
+            }<br /><br />
+      }<br /><br />
+<br /><br />
+      </span><span style="color:#0000ff;">#region</span><span style="color:#000000;"> INotifyPropertyChanged Members</span><span style="color:#000000;"><br /><br />
+<br /><br />
+      </span><span style="color:#0000ff;">public</span><span style="color:#000000;"> </span><span style="color:#0000ff;">event</span><span style="color:#000000;"> PropertyChangedEventHandler PropertyChanged;<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">       //جەدۋەلنىڭ ھالقىسىدا سانلىق مەلۇماتنىڭ ئۆزگەرگەنلىگىنى بەتكە ئۇقتۇرۇشقا ئىشلىتىلىدۇ <br /><br />
+</div><br />
+</span><span style="color:#000000;">      </span><span style="color:#0000ff;">private</span><span style="color:#000000;"> </span><span style="color:#0000ff;">void</span><span style="color:#000000;"> NotifyPropertyChanged(</span><span style="color:#0000ff;">string</span><span style="color:#000000;"> propertyName)<br /><br />
+      {<br /><br />
+            </span><span style="color:#0000ff;">if</span><span style="color:#000000;"> (PropertyChanged </span><span style="color:#000000;">!=</span><span style="color:#000000;"> </span><span style="color:#0000ff;">null</span><span style="color:#000000;">)<br /><br />
+            {<br /><br />
+                PropertyChanged(</span><span style="color:#0000ff;">this</span><span style="color:#000000;">, </span><span style="color:#0000ff;">new</span><span style="color:#000000;"> PropertyChangedEventArgs(propertyName));<br /><br />
+            }<br /><br />
+      }<br /><br />
+<br /><br />
+      </span><span style="color:#0000ff;">#endregion</span><span style="color:#000000;"><br /><br />
+<br /><br />
+      </span><span style="color:#0000ff;">#region</span><span style="color:#000000;"> INotifyPropertyChanging Members</span><span style="color:#000000;"><br /><br />
+<br /><br />
+      </span><span style="color:#0000ff;">public</span><span style="color:#000000;"> </span><span style="color:#0000ff;">event</span><span style="color:#000000;"> PropertyChangingEventHandler PropertyChanging;<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">       //جەدۋەل ھالقىسى مەلۇماتىنىڭ ئۆزگەرمەكچى بولغانلىقىنى ماسلىق خېتىگە ئۇقتۇرۇشقا ئىشلىتىلىدۇ<br /><br />
+</div><br />
+</span><span style="color:#000000;">      </span><span style="color:#0000ff;">private</span><span style="color:#000000;"> </span><span style="color:#0000ff;">void</span><span style="color:#000000;"> NotifyPropertyChanging(</span><span style="color:#0000ff;">string</span><span style="color:#000000;"> propertyName)<br /><br />
+      {<br /><br />
+            </span><span style="color:#0000ff;">if</span><span style="color:#000000;"> (PropertyChanging </span><span style="color:#000000;">!=</span><span style="color:#000000;"> </span><span style="color:#0000ff;">null</span><span style="color:#000000;">)<br /><br />
+            {<br /><br />
+                PropertyChanging(</span><span style="color:#0000ff;">this</span><span style="color:#000000;">, </span><span style="color:#0000ff;">new</span><span style="color:#000000;"> PropertyChangingEventArgs(propertyName));<br /><br />
+            }<br /><br />
+      }<br /><br />
+<br /><br />
+      </span><span style="color:#0000ff;">#endregion</span><span style="color:#000000;"><br /><br />
+<br /><br />
+    }<br /><br />
+}</span></div><br />
+</div><br />
+<div dir="rtl" align="center">سانداننىڭ DataContent سىنى قۇرۇش، بىر EmployeeDataContext تۈرى قۇرۇش ئارقىلىق DataContext غا ۋارىسلىق قىلىپ، EmployeeDataContext ئىچىدە ساندان ئۇلاش تىزمىسى، خادىم ئۇچۇر جەدۋىلى ئېنىقلايدۇ.</div><br />
+<div dir="ltr" style="background-color:#ffffdc;"><br />
+<div><span style="color:#0000ff;">using</span><span style="color:#000000;"> System.Data.Linq;<br /><br />
+<br /><br />
+</span><span style="color:#0000ff;">namespace</span><span style="color:#000000;"> SQLServerDemo<br /><br />
+{<br /><br />
+    </span><span style="color:#0000ff;">public</span><span style="color:#000000;"> </span><span style="color:#0000ff;">class</span><span style="color:#000000;"> EmployeeDataContext : DataContext<br /><br />
+    {<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">       //ساندان ئۇلاش تىزمىسى<br /><br />
+</div><br />
+</span><span style="color:#000000;">      </span><span style="color:#0000ff;">public</span><span style="color:#000000;"> </span><span style="color:#0000ff;">static</span><span style="color:#000000;"> </span><span style="color:#0000ff;">string</span><span style="color:#000000;"> DBConnectionString </span><span style="color:#000000;">=</span><span style="color:#000000;"> </span><span style="color:#800000;">"</span><span style="color:#800000;">Data Source=isostore:/Employee.sdf</span><span style="color:#800000;">"</span><span style="color:#000000;">;<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">       //ساندان ئۇلاش تىزمىسىنى DataContextئاساسى تۈرگە يوللايدۇ<br /><br />
+</div><br />
+</span><span style="color:#000000;">      </span><span style="color:#0000ff;">public</span><span style="color:#000000;"> EmployeeDataContext(</span><span style="color:#0000ff;">string</span><span style="color:#000000;"> connectionString)<br /><br />
+            : </span><span style="color:#0000ff;">base</span><span style="color:#000000;">(connectionString)<br /><br />
+      { }<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">       //بىر خادىم جەدۋىلى ئېنىقلايدۇ<br /><br />
+</div><br />
+</span><span style="color:#000000;">      </span><span style="color:#0000ff;">public</span><span style="color:#000000;"> Table</span><span style="color:#000000;">&lt;</span><span style="color:#000000;">EmployeeTable</span><span style="color:#000000;">&gt;</span><span style="color:#000000;"> Employees;<br /><br />
+    }<br /><br />
+}</span></div><br />
+</div><br />
+<div dir="rtl" align="center">(2) بەت مەلۇماتلىرى باغلاش توپىنى قۇرۇش</div><br />
+<div dir="ltr" style="background-color:#ffffdc;"><span style="color:#0000ff;">using</span><span style="color:#000000;"> System.ComponentModel;<br /><br />
+</span><span style="color:#0000ff;">using</span><span style="color:#000000;"> System.Collections.ObjectModel;<br /><br />
+<br /><br />
+</span><span style="color:#0000ff;">namespace</span><span style="color:#000000;"> SQLServerDemo<br /><br />
+{</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">      //EmployeeCollection بولسا بەتتىكى مەلۇماتقا باغلاشقا ئىشلىتىلىدۇ<br /><br />
+</div><br />
+</span><span style="color:#000000;">    </span><span style="color:#0000ff;">public</span><span style="color:#000000;"> </span><span style="color:#0000ff;">class</span><span style="color:#000000;"> EmployeeCollection : INotifyPropertyChanged<br /><br />
+    {<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">       //ObservableCollection نى ئېنىقلاش ئارقىلىق بەتتىكى مەلۇماتنى باغلاش<br /><br />
+</div><br />
+</span><span style="color:#000000;">      </span><span style="color:#0000ff;">private</span><span style="color:#000000;"> ObservableCollection</span><span style="color:#000000;">&lt;</span><span style="color:#000000;">EmployeeTable</span><span style="color:#000000;">&gt;</span><span style="color:#000000;"> _employeeTables;<br /><br />
+      </span><span style="color:#0000ff;">public</span><span style="color:#000000;"> ObservableCollection</span><span style="color:#000000;">&lt;</span><span style="color:#000000;">EmployeeTable</span><span style="color:#000000;">&gt;</span><span style="color:#000000;"> EmployeeTables<br /><br />
+      {<br /><br />
+            </span><span style="color:#0000ff;">get</span><span style="color:#000000;"><br /><br />
+            {<br /><br />
+                </span><span style="color:#0000ff;">return</span><span style="color:#000000;"> _employeeTables;<br /><br />
+            }<br /><br />
+            </span><span style="color:#0000ff;">set</span><span style="color:#000000;"><br /><br />
+            {<br /><br />
+                </span><span style="color:#0000ff;">if</span><span style="color:#000000;"> (_employeeTables </span><span style="color:#000000;">!=</span><span style="color:#000000;"> value)<br /><br />
+                {<br /><br />
+                  _employeeTables </span><span style="color:#000000;">=</span><span style="color:#000000;"> value;<br /><br />
+                  NotifyPropertyChanged(</span><span style="color:#800000;">"</span><span style="color:#800000;">EmployeeTables</span><span style="color:#800000;">"</span><span style="color:#000000;">);<br /><br />
+                }<br /><br />
+            }<br /><br />
+      }<br /><br />
+<br /><br />
+      </span><span style="color:#0000ff;">#region</span><span style="color:#000000;"> INotifyPropertyChanged Members</span><span style="color:#000000;"><br /><br />
+<br /><br />
+      </span><span style="color:#0000ff;">public</span><span style="color:#000000;"> </span><span style="color:#0000ff;">event</span><span style="color:#000000;"> PropertyChangedEventHandler PropertyChanged;<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">       //خاسلىقنىڭ ئۆزگەرگەنلىكىنى ئۇقتۇرۇشقا ئىشلىتىلىدۇ<br /><br />
+</div><br />
+</span><span style="color:#000000;">      </span><span style="color:#0000ff;">private</span><span style="color:#000000;"> </span><span style="color:#0000ff;">void</span><span style="color:#000000;"> NotifyPropertyChanged(</span><span style="color:#0000ff;">string</span><span style="color:#000000;"> propertyName)<br /><br />
+      {<br /><br />
+            </span><span style="color:#0000ff;">if</span><span style="color:#000000;"> (PropertyChanged </span><span style="color:#000000;">!=</span><span style="color:#000000;"> </span><span style="color:#0000ff;">null</span><span style="color:#000000;">)<br /><br />
+            {<br /><br />
+                PropertyChanged(</span><span style="color:#0000ff;">this</span><span style="color:#000000;">, </span><span style="color:#0000ff;">new</span><span style="color:#000000;"> PropertyChangedEventArgs(propertyName));<br /><br />
+            }<br /><br />
+      }<br /><br />
+      </span><span style="color:#0000ff;">#endregion</span><span style="color:#000000;"><br /><br />
+    }<br /><br />
+}</span></div><br />
+<div dir="rtl" align="center">(3) ساندان قۇرۇش، مەلۇمات باغلاش، خادىم ئۇچۇرى جەدۋىلىنىڭ قوشۇش ئۆچۈرۈش ئۆزگەرتىش ئىزدەش مەشغۇلاتىنى ئورۇنداش.<br /><br />
+App.xaml.cs دىكى تەرتىپ يۈكلەش ئەھۋالى ئىچىدە ساندان قۇرۇۋېتىش</div><br />
+<div dir="ltr" style="background-color:#ffffdc;"><br />
+<div><span style="color:#0000ff;">private</span><span style="color:#000000;"> </span><span style="color:#0000ff;">void</span><span style="color:#000000;"> Application_Launching(</span><span style="color:#0000ff;">object</span><span style="color:#000000;"> sender, LaunchingEventArgs e)<br /><br />
+      {<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">         //ئەگەر ساندان مەۋجۇت بولمىسا بىر ساندان قۇرۇش<br /><br />
+</div><br />
+</span><span style="color:#000000;">            </span><span style="color:#0000ff;">using</span><span style="color:#000000;"> (EmployeeDataContext db </span><span style="color:#000000;">=</span><span style="color:#000000;"> </span><span style="color:#0000ff;">new</span><span style="color:#000000;"> EmployeeDataContext(EmployeeDataContext.DBConnectionString))<br /><br />
+            {<br /><br />
+                </span><span style="color:#0000ff;">if</span><span style="color:#000000;"> (db.DatabaseExists() </span><span style="color:#000000;">==</span><span style="color:#000000;"> </span><span style="color:#0000ff;">false</span><span style="color:#000000;">)<br /><br />
+                {<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">             //ساندان قۇرۇش<br /><br />
+</div><br />
+</span><span style="color:#000000;">                  db.CreateDatabase();<br /><br />
+                }<br /><br />
+            }<br /><br />
+      }</span></div><br />
+</div><br />
+<div dir="rtl" align="center">MainPage.xaml.cs ھۆججىتىنىڭ كودى</div><br />
+<div dir="ltr" style="background-color:#ffffdc;"><br />
+<div><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">phone:PhoneApplicationPage <br /><br />
+    </span><span style="color:#ff0000;">x:Class</span><span style="color:#0000ff;">="SQLServerDemo.MainPage"</span><span style="color:#ff0000;"><br /><br />
+    xmlns</span><span style="color:#0000ff;">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span><span style="color:#ff0000;"><br /><br />
+    xmlns:x</span><span style="color:#0000ff;">="http://schemas.microsoft.com/winfx/2006/xaml"</span><span style="color:#ff0000;"><br /><br />
+    xmlns:phone</span><span style="color:#0000ff;">="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"</span><span style="color:#ff0000;"><br /><br />
+    xmlns:shell</span><span style="color:#0000ff;">="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"</span><span style="color:#ff0000;"><br /><br />
+    xmlns:d</span><span style="color:#0000ff;">="http://schemas.microsoft.com/expression/blend/2008"</span><span style="color:#ff0000;"><br /><br />
+    xmlns:mc</span><span style="color:#0000ff;">="http://schemas.openxmlformats.org/markup-compatibility/2006"</span><span style="color:#ff0000;"><br /><br />
+    mc:Ignorable</span><span style="color:#0000ff;">="d"</span><span style="color:#ff0000;"> d:DesignWidth</span><span style="color:#0000ff;">="480"</span><span style="color:#ff0000;"> d:DesignHeight</span><span style="color:#0000ff;">="768"</span><span style="color:#ff0000;"><br /><br />
+    FontFamily</span><span style="color:#0000ff;">="</span><span style="color:#808000;">{StaticResource PhoneFontFamilyNormal}</span><span style="color:#0000ff;">"</span><span style="color:#ff0000;"><br /><br />
+    FontSize</span><span style="color:#0000ff;">="</span><span style="color:#808000;">{StaticResource PhoneFontSizeNormal}</span><span style="color:#0000ff;">"</span><span style="color:#ff0000;"><br /><br />
+    Foreground</span><span style="color:#0000ff;">="</span><span style="color:#808000;">{StaticResource PhoneForegroundBrush}</span><span style="color:#0000ff;">"</span><span style="color:#ff0000;"><br /><br />
+    SupportedOrientations</span><span style="color:#0000ff;">="Portrait"</span><span style="color:#ff0000;"> Orientation</span><span style="color:#0000ff;">="Portrait"</span><span style="color:#ff0000;"><br /><br />
+    shell:SystemTray.IsVisible</span><span style="color:#0000ff;">="True"</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+<br /><br />
+    </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">Grid </span><span style="color:#ff0000;">x:Name</span><span style="color:#0000ff;">="LayoutRoot"</span><span style="color:#ff0000;"> Background</span><span style="color:#0000ff;">="Transparent"</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+      </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">Grid.RowDefinitions</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+            </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">RowDefinition </span><span style="color:#ff0000;">Height</span><span style="color:#0000ff;">="Auto"</span><span style="color:#0000ff;">/&gt;</span><span style="color:#000000;"><br /><br />
+            </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">RowDefinition </span><span style="color:#ff0000;">Height</span><span style="color:#0000ff;">="*"</span><span style="color:#0000ff;">/&gt;</span><span style="color:#000000;"><br /><br />
+      </span><span style="color:#0000ff;">&lt;/</span><span style="color:#800000;">Grid.RowDefinitions</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+<br /><br />
+      </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">StackPanel </span><span style="color:#ff0000;">x:Name</span><span style="color:#0000ff;">="TitlePanel"</span><span style="color:#ff0000;"> Grid.Row</span><span style="color:#0000ff;">="0"</span><span style="color:#ff0000;"> Margin</span><span style="color:#0000ff;">="12,17,0,28"</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+            </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">TextBlock </span><span style="color:#ff0000;">x:Name</span><span style="color:#0000ff;">="ApplicationTitle"</span><span style="color:#ff0000;"> Text</span><span style="color:#0000ff;">="MY APPLICATION"</span><span style="color:#ff0000;"> Style</span><span style="color:#0000ff;">="</span><span style="color:#808000;">{StaticResource PhoneTextNormalStyle}</span><span style="color:#0000ff;">"</span><span style="color:#0000ff;">/&gt;</span><span style="color:#000000;"><br /><br />
+            </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">TextBlock </span><span style="color:#ff0000;">x:Name</span><span style="color:#0000ff;">="PageTitle"</span><span style="color:#ff0000;"> Text</span><span style="color:#0000ff;">="SQL Server"</span><span style="color:#ff0000;"> Margin</span><span style="color:#0000ff;">="9,-7,0,0"</span><span style="color:#ff0000;"> Style</span><span style="color:#0000ff;">="</span><span style="color:#808000;">{StaticResource PhoneTextTitle1Style}</span><span style="color:#0000ff;">"</span><span style="color:#0000ff;">/&gt;</span><span style="color:#000000;"><br /><br />
+      </span><span style="color:#0000ff;">&lt;/</span><span style="color:#800000;">StackPanel</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+<br /><br />
+      </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">Grid </span><span style="color:#ff0000;">x:Name</span><span style="color:#0000ff;">="ContentPanel"</span><span style="color:#ff0000;"> Grid.Row</span><span style="color:#0000ff;">="1"</span><span style="color:#ff0000;"> Margin</span><span style="color:#0000ff;">="12,0,12,0"</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+            </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">Grid </span><span style="color:#ff0000;">Margin</span><span style="color:#0000ff;">="0,0,0,385"</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+                </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">Grid.ColumnDefinitions</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+                  </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">ColumnDefinition </span><span style="color:#ff0000;">Width</span><span style="color:#0000ff;">="*"</span><span style="color:#ff0000;"> </span><span style="color:#0000ff;">/&gt;</span><span style="color:#000000;"><br /><br />
+                  </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">ColumnDefinition </span><span style="color:#ff0000;">Width</span><span style="color:#0000ff;">="Auto"</span><span style="color:#ff0000;"> </span><span style="color:#0000ff;">/&gt;</span><span style="color:#000000;"><br /><br />
+                </span><span style="color:#0000ff;">&lt;/</span><span style="color:#800000;">Grid.ColumnDefinitions</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+                </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">TextBlock </span><span style="color:#ff0000;">FontSize</span><span style="color:#0000ff;">="30"</span><span style="color:#ff0000;"> Height</span><span style="color:#0000ff;">="37"</span><span style="color:#ff0000;"> HorizontalAlignment</span><span style="color:#0000ff;">="Left"</span><span style="color:#ff0000;"> Margin</span><span style="color:#0000ff;">="12,18,0,0"</span><span style="color:#ff0000;"> Name</span><span style="color:#0000ff;">="textBlock1"</span><span style="color:#ff0000;"> Text</span><span style="color:#0000ff;">="员工名字:"</span><span style="color:#ff0000;"> VerticalAlignment</span><span style="color:#0000ff;">="Top"</span><span style="color:#ff0000;"> </span><span style="color:#0000ff;">/&gt;</span><span style="color:#000000;"><br /><br />
+                </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">TextBox </span><span style="color:#ff0000;">Name</span><span style="color:#0000ff;">="name"</span><span style="color:#ff0000;"> Text</span><span style="color:#0000ff;">=""</span><span style="color:#ff0000;">Margin</span><span style="color:#0000ff;">="145,0,6,144"</span><span style="color:#ff0000;"> </span><span style="color:#0000ff;">/&gt;</span><span style="color:#000000;"><br /><br />
+                <br /><br />
+                </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">TextBlock </span><span style="color:#ff0000;">FontSize</span><span style="color:#0000ff;">="30"</span><span style="color:#ff0000;"> Height</span><span style="color:#0000ff;">="52"</span><span style="color:#ff0000;"> HorizontalAlignment</span><span style="color:#0000ff;">="Left"</span><span style="color:#ff0000;"> Margin</span><span style="color:#0000ff;">="18,74,0,0"</span><span style="color:#ff0000;"> Name</span><span style="color:#0000ff;">="textBlock2"</span><span style="color:#ff0000;"> Text</span><span style="color:#0000ff;">="简介："</span><span style="color:#ff0000;"> VerticalAlignment</span><span style="color:#0000ff;">="Top"</span><span style="color:#ff0000;"> </span><span style="color:#0000ff;">/&gt;</span><span style="color:#000000;"><br /><br />
+                </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">TextBox </span><span style="color:#ff0000;">Height</span><span style="color:#0000ff;">="79"</span><span style="color:#ff0000;"> HorizontalAlignment</span><span style="color:#0000ff;">="Left"</span><span style="color:#ff0000;"> Margin</span><span style="color:#0000ff;">="93,65,0,0"</span><span style="color:#ff0000;"> Name</span><span style="color:#0000ff;">="desc"</span><span style="color:#ff0000;"> Text</span><span style="color:#0000ff;">=""</span><span style="color:#ff0000;"> VerticalAlignment</span><span style="color:#0000ff;">="Top"</span><span style="color:#ff0000;"> Width</span><span style="color:#0000ff;">="357"</span><span style="color:#ff0000;"> </span><span style="color:#0000ff;">/&gt;</span><span style="color:#000000;"><br /><br />
+<br /><br />
+                </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">Button <br /><br />
+                  </span><span style="color:#ff0000;">Content</span><span style="color:#0000ff;">="保存"</span><span style="color:#ff0000;"> x:Name</span><span style="color:#0000ff;">="addButton"</span><span style="color:#ff0000;"><br /><br />
+                  Click</span><span style="color:#0000ff;">="addButton_Click"</span><span style="color:#ff0000;"> Margin</span><span style="color:#0000ff;">="219,132,6,6"</span><span style="color:#ff0000;"> </span><span style="color:#0000ff;">/&gt;</span><span style="color:#000000;"><br /><br />
+<br /><br />
+            </span><span style="color:#0000ff;">&lt;/</span><span style="color:#800000;">Grid</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+<br /><br />
+            </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">ListBox </span><span style="color:#ff0000;">x:Name</span><span style="color:#0000ff;">="toDoItemsListBox"</span><span style="color:#ff0000;"> ItemsSource</span><span style="color:#0000ff;">="</span><span style="color:#808000;">{Binding EmployeeTables}</span><span style="color:#0000ff;">"</span><span style="color:#ff0000;"> Margin</span><span style="color:#0000ff;">="12,241,12,0"</span><span style="color:#ff0000;"> Width</span><span style="color:#0000ff;">="440"</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+               </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">ListBox.ItemTemplate</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+                  </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">DataTemplate</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+                        </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">Grid </span><span style="color:#ff0000;">HorizontalAlignment</span><span style="color:#0000ff;">="Stretch"</span><span style="color:#ff0000;"> Width</span><span style="color:#0000ff;">="440"</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+                            </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">Grid.ColumnDefinitions</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+                              </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">ColumnDefinition </span><span style="color:#ff0000;">Width</span><span style="color:#0000ff;">="50"</span><span style="color:#ff0000;"> </span><span style="color:#0000ff;">/&gt;</span><span style="color:#000000;"><br /><br />
+                              </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">ColumnDefinition </span><span style="color:#ff0000;">Width</span><span style="color:#0000ff;">="*"</span><span style="color:#ff0000;"> </span><span style="color:#0000ff;">/&gt;</span><span style="color:#000000;"><br /><br />
+                              </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">ColumnDefinition </span><span style="color:#ff0000;">Width</span><span style="color:#0000ff;">="100"</span><span style="color:#ff0000;"> </span><span style="color:#0000ff;">/&gt;</span><span style="color:#000000;"><br /><br />
+                            </span><span style="color:#0000ff;">&lt;/</span><span style="color:#800000;">Grid.ColumnDefinitions</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+                        <br /><br />
+                            </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">TextBlock<br /><br />
+                              </span><span style="color:#ff0000;">Text</span><span style="color:#0000ff;">="</span><span style="color:#808000;">{Binding EmployeeName}</span><span style="color:#0000ff;">"</span><span style="color:#ff0000;"><br /><br />
+                              FontSize</span><span style="color:#0000ff;">="</span><span style="color:#808000;">{StaticResource PhoneFontSizeLarge}</span><span style="color:#0000ff;">"</span><span style="color:#ff0000;"><br /><br />
+                              Grid.Column</span><span style="color:#0000ff;">="1"</span><span style="color:#ff0000;"><br /><br />
+                              VerticalAlignment</span><span style="color:#0000ff;">="Center"</span><span style="color:#0000ff;">/&gt;</span><span style="color:#000000;"><br /><br />
+                            </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">Button<br /><br />
+                              </span><span style="color:#ff0000;">Grid.Column</span><span style="color:#0000ff;">="2"</span><span style="color:#ff0000;"><br /><br />
+                              x:Name</span><span style="color:#0000ff;">="deleteButton"</span><span style="color:#ff0000;"><br /><br />
+                              BorderThickness</span><span style="color:#0000ff;">="0"</span><span style="color:#ff0000;">                              <br /><br />
+                              Margin</span><span style="color:#0000ff;">="0"</span><span style="color:#ff0000;"><br /><br />
+                              Click</span><span style="color:#0000ff;">="deleteButton_Click"</span><span style="color:#ff0000;"><br /><br />
+                              Content</span><span style="color:#0000ff;">="删除"</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+                            </span><span style="color:#0000ff;">&lt;/</span><span style="color:#800000;">Button</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+                            </span><span style="color:#0000ff;">&lt;</span><span style="color:#800000;">Button<br /><br />
+                              </span><span style="color:#ff0000;">Grid.Column</span><span style="color:#0000ff;">="1"</span><span style="color:#ff0000;"><br /><br />
+                              x:Name</span><span style="color:#0000ff;">="editButton"</span><span style="color:#ff0000;"><br /><br />
+                              BorderThickness</span><span style="color:#0000ff;">="0"</span><span style="color:#ff0000;">                              <br /><br />
+                              Margin</span><span style="color:#0000ff;">="209,0,81,0"</span><span style="color:#ff0000;"><br /><br />
+                              Click</span><span style="color:#0000ff;">="editButton_Click"</span><span style="color:#ff0000;"><br /><br />
+                              Content</span><span style="color:#0000ff;">="编辑"</span><span style="color:#ff0000;"> Grid.ColumnSpan</span><span style="color:#0000ff;">="2"</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+                            </span><span style="color:#0000ff;">&lt;/</span><span style="color:#800000;">Button</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+                        </span><span style="color:#0000ff;">&lt;/</span><span style="color:#800000;">Grid</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+                   </span><span style="color:#0000ff;">&lt;/</span><span style="color:#800000;">DataTemplate</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+                </span><span style="color:#0000ff;">&lt;/</span><span style="color:#800000;">ListBox.ItemTemplate</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"> <br /><br />
+            </span><span style="color:#0000ff;">&lt;/</span><span style="color:#800000;">ListBox</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;">   <br /><br />
+      </span><span style="color:#0000ff;">&lt;/</span><span style="color:#800000;">Grid</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+    </span><span style="color:#0000ff;">&lt;/</span><span style="color:#800000;">Grid</span><span style="color:#0000ff;">&gt;</span><span style="color:#000000;"><br /><br />
+<br /><br />
+</span><span style="color:#0000ff;">&lt;/</span><span style="color:#800000;">phone:PhoneApplicationPage</span><span style="color:#0000ff;">&gt;</span></div><br />
+</div><br />
+<div dir="rtl" align="center">MainPage.xaml.cs ھۆججىتىنىڭ كودى</div><br />
+<div dir="ltr" style="background-color:#ffffdc;"><br />
+<div><span style="color:#0000ff;">using</span><span style="color:#000000;"> System.Linq;<br /><br />
+</span><span style="color:#0000ff;">using</span><span style="color:#000000;"> System.Windows;<br /><br />
+</span><span style="color:#0000ff;">using</span><span style="color:#000000;"> System.Windows.Controls;<br /><br />
+</span><span style="color:#0000ff;">using</span><span style="color:#000000;"> Microsoft.Phone.Controls;<br /><br />
+</span><span style="color:#0000ff;">using</span><span style="color:#000000;"> System.Collections.ObjectModel;<br /><br />
+<br /><br />
+</span><span style="color:#0000ff;">namespace</span><span style="color:#000000;"> SQLServerDemo<br /><br />
+{<br /><br />
+    </span><span style="color:#0000ff;">public</span><span style="color:#000000;"> </span><span style="color:#0000ff;">partial</span><span style="color:#000000;"> </span><span style="color:#0000ff;">class</span><span style="color:#000000;"> MainPage : PhoneApplicationPage<br /><br />
+    {<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">      //DataContext مىسالى قۇرۇپ، يەرلىك ساندانغا مەشغۇلات قىلىش<br /><br />
+</div><br />
+</span><span style="color:#000000;">      </span><span style="color:#0000ff;">private</span><span style="color:#000000;"> EmployeeDataContext employeeDB;<br /><br />
+      </span><span style="color:#0000ff;">private</span><span style="color:#000000;"> EmployeeCollection employeeCol </span><span style="color:#000000;">=</span><span style="color:#000000;"> </span><span style="color:#0000ff;">new</span><span style="color:#000000;"> EmployeeCollection();<br /><br />
+<br /><br />
+      </span><span style="color:#0000ff;">public</span><span style="color:#000000;"> MainPage()<br /><br />
+      {<br /><br />
+            InitializeComponent();<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">         //ساندانغا ئۇلاش ۋە DataContext مىسالىنى دەسلەپلەشتۈرۈش<br /><br />
+</div><br />
+</span><span style="color:#000000;">            employeeDB </span><span style="color:#000000;">=</span><span style="color:#000000;"> </span><span style="color:#0000ff;">new</span><span style="color:#000000;"> EmployeeDataContext(EmployeeDataContext.DBConnectionString);<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">         //Linq نىڭ ئىزدەش جۈملىسى ئارقىلىق EmployeeTable جەدۋىلىدىكى بارلىق مەلۇماتنى ئىزدەش<br /><br />
+</div><br />
+</span><span style="color:#000000;">            var employeesInDB </span><span style="color:#000000;">=</span><span style="color:#000000;"> from EmployeeTable employee </span><span style="color:#0000ff;">in</span><span style="color:#000000;"> employeeDB.Employees<br /><br />
+                              select employee;<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">         //ئىزدەش نەتىجىسىنى بەتتىكى مەلۇمات باغلانغان توپلام ئىچىگە قايتۇرۇش<br /><br />
+</div><br />
+</span><span style="color:#000000;">            employeeCol.EmployeeTables </span><span style="color:#000000;">=</span><span style="color:#000000;"> </span><span style="color:#0000ff;">new</span><span style="color:#000000;"> ObservableCollection</span><span style="color:#000000;">&lt;</span><span style="color:#000000;">EmployeeTable</span><span style="color:#000000;">&gt;</span><span style="color:#000000;">(employeesInDB);<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">         //نۆۋەتتىكى بەتتىكى DataContext قا قىممەت بېرىپ، مەلۇمات باغلاش<br /><br />
+</div><br />
+</span><span style="color:#000000;">            </span><span style="color:#0000ff;">this</span><span style="color:#000000;">.DataContext </span><span style="color:#000000;">=</span><span style="color:#000000;"> employeeCol;<br /><br />
+      }<br /><br />
+<br /><br />
+      </span><span style="color:#808080;">///</span><span style="color:#008000;"> </span><span style="color:#808080;">&lt;summary&gt;</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">       /<span style="color:#008000;">//</span>ئۆچۈرۈش مەشغۇلاتى<br /><br />
+</div><br />
+      </span><span style="color:#808080;">///</span><span style="color:#008000;"> </span><span style="color:#808080;">&lt;/summary&gt;</span><span style="color:#008000;"><br /><br />
+      </span><span style="color:#808080;">///</span><span style="color:#008000;"> </span><span style="color:#808080;">&lt;param name="sender"&gt;&lt;/param&gt;</span><span style="color:#008000;"><br /><br />
+      </span><span style="color:#808080;">///</span><span style="color:#008000;"> </span><span style="color:#808080;">&lt;param name="e"&gt;&lt;/param&gt;</span><span style="color:#808080;"><br /><br />
+</span><span style="color:#000000;">      </span><span style="color:#0000ff;">private</span><span style="color:#000000;"> </span><span style="color:#0000ff;">void</span><span style="color:#000000;"> deleteButton_Click(</span><span style="color:#0000ff;">object</span><span style="color:#000000;"> sender, RoutedEventArgs e)<br /><br />
+      {</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">      //كۇنۇپكا چېكىلىشنى ئېلىش مىسالى<br /><br />
+</div><br />
+</span><span style="color:#000000;">            var button </span><span style="color:#000000;">=</span><span style="color:#000000;"> sender </span><span style="color:#0000ff;">as</span><span style="color:#000000;"> Button;<br /><br />
+<br /><br />
+            </span><span style="color:#0000ff;">if</span><span style="color:#000000;"> (button </span><span style="color:#000000;">!=</span><span style="color:#000000;"> </span><span style="color:#0000ff;">null</span><span style="color:#000000;">)<br /><br />
+            {</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">            //نۆۋەتتىكى كۇنۇپكىغا باغلانغان DataContext نى، ھەمدە نۆۋەتتىكى ئۆچۈرىدىغان EmployeeTable مىسالىنى ئېلىش<br /><br />
+</div><br />
+</span><span style="color:#000000;">                EmployeeTable employeeForDelete </span><span style="color:#000000;">=</span><span style="color:#000000;"> button.DataContext </span><span style="color:#0000ff;">as</span><span style="color:#000000;"> EmployeeTable;</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">            //باغلانما توپلام ئىچىدىكى ئۆچۈرمەكچى بولغان EmployeeTable خاتىرىسىنى چىقىرىۋېتىش<br /><br />
+</div><br />
+</span><span style="color:#000000;">                employeeCol.EmployeeTables.Remove(employeeForDelete);</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">            //ساندان ئىچىدىكى ئۆچۈرمەكچى بولغان EmployeeTable خاتىرىسىنى چىقىرىۋېتىش<br /><br />
+</div><br />
+</span><span style="color:#000000;">                employeeDB.Employees.DeleteOnSubmit(employeeForDelete);</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">            //ساندان ئۆزگىرىشىنى ساقلاش<br /><br />
+</div><br />
+</span><span style="color:#000000;">                employeeDB.SubmitChanges();<br /><br />
+            }<br /><br />
+      }<br /><br />
+<br /><br />
+      </span><span style="color:#808080;">///</span><span style="color:#008000;"> </span><span style="color:#808080;">&lt;summary&gt;</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">       /<span style="color:#008000;">//</span>ساقلاش مەشغۇلاتى، يېڭىدىن قوشۇلغان ۋە تەھرىرلەنگەن خادىم ئۇچۇرىنى بىر تەرەپ قىلىش<br /><br />
+</div><br />
+      </span><span style="color:#808080;">///</span><span style="color:#008000;"> </span><span style="color:#808080;">&lt;/summary&gt;</span><span style="color:#008000;"><br /><br />
+      </span><span style="color:#808080;">///</span><span style="color:#008000;"> </span><span style="color:#808080;">&lt;param name="sender"&gt;&lt;/param&gt;</span><span style="color:#008000;"><br /><br />
+      </span><span style="color:#808080;">///</span><span style="color:#008000;"> </span><span style="color:#808080;">&lt;param name="e"&gt;&lt;/param&gt;</span><span style="color:#808080;"><br /><br />
+</span><span style="color:#000000;">      </span><span style="color:#0000ff;">private</span><span style="color:#000000;"> </span><span style="color:#0000ff;">void</span><span style="color:#000000;"> addButton_Click(</span><span style="color:#0000ff;">object</span><span style="color:#000000;"> sender, RoutedEventArgs e)<br /><br />
+      {</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">         //خادىم ئىسمى ۋە تۇنۇشتۇرۇلۇشىنىڭ قۇرۇق بولماسلىقىنى باشقۇرۇش<br /><br />
+</div><br />
+</span><span style="color:#000000;">            </span><span style="color:#0000ff;">if</span><span style="color:#000000;"> (name.Text </span><span style="color:#000000;">!=</span><span style="color:#000000;"> </span><span style="color:#800000;">""</span><span style="color:#000000;"> </span><span style="color:#000000;">&amp;&amp;</span><span style="color:#000000;"> desc.Text </span><span style="color:#000000;">!=</span><span style="color:#000000;"> </span><span style="color:#800000;">""</span><span style="color:#000000;">)<br /><br />
+            {<br /><br />
+                </span><span style="color:#0000ff;">if</span><span style="color:#000000;"> (State.Count</span><span style="color:#000000;">&gt;</span><span style="color:#800080;">0</span><span style="color:#000000;"> </span><span style="color:#000000;">&amp;&amp;</span><span style="color:#000000;"> State[</span><span style="color:#800000;">"</span><span style="color:#800000;">employee</span><span style="color:#800000;">"</span><span style="color:#000000;">] </span><span style="color:#000000;">!=</span><span style="color:#000000;"> </span><span style="color:#0000ff;">null</span><span style="color:#000000;"> )</span><span style="color:#008000;">//</span><span style="color:#008000;">تەھرىرلەش ھالىتى</span><span style="color:#008000;"><br /><br />
+</span><span style="color:#000000;">                {</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">               //تەھرىرلەنگەن EmployeeTable نىشانىنى ئېلىش<br /><br />
+</div><br />
+</span><span style="color:#000000;">                  EmployeeTable employee </span><span style="color:#000000;">=</span><span style="color:#000000;"> (EmployeeTable)State[</span><span style="color:#800000;">"</span><span style="color:#800000;">employee</span><span style="color:#800000;">"</span><span style="color:#000000;">];<br /><br />
+                  employee.EmployeeName </span><span style="color:#000000;">=</span><span style="color:#000000;"> name.Text;<br /><br />
+                  employee.EmployeeDesc </span><span style="color:#000000;">=</span><span style="color:#000000;"> desc.Text;</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">            //ساندان ئۆزگىرىشىنى ساقلاش<br /><br />
+</div><br />
+</span><span style="color:#000000;">                  employeeDB.SubmitChanges();</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">               //باغلانما توپلام مەلۇماتلىرىنى قوشۇش، چۈنكى تەھرىرلەشنى چەككەندە چىقىرىۋېتىلگەن<br /><br />
+</div><br />
+</span><span style="color:#000000;">                  employeeCol.EmployeeTables.Add(employee);<br /><br />
+                  State[</span><span style="color:#800000;">"</span><span style="color:#800000;">employee</span><span style="color:#800000;">"</span><span style="color:#000000;">] </span><span style="color:#000000;">=</span><span style="color:#000000;"> </span><span style="color:#0000ff;">null</span><span style="color:#000000;">;<br /><br />
+                }<br /><br />
+                </span><span style="color:#0000ff;">else</span><span style="color:#008000;">//</span><span style="color:#008000;">يېڭى قوشۇش ھالىتى</span><span style="color:#008000;"> <div dir="rtl" align="left"><br /><br />
+ </div><br />
+</span><span style="color:#000000;">                {<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">               //جەدۋەلگە بىر قۇر مەلۇمات قۇرۇش<br /><br />
+</div><br />
+</span><span style="color:#000000;">                  EmployeeTable newEmployee </span><span style="color:#000000;">=</span><span style="color:#000000;"> </span><span style="color:#0000ff;">new</span><span style="color:#000000;"> EmployeeTable { EmployeeName </span><span style="color:#000000;">=</span><span style="color:#000000;"> name.Text, EmployeeDesc </span><span style="color:#000000;">=</span><span style="color:#000000;"> desc.Text };<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">            //باغلانما توپلام مەلۇماتىنى قوشۇش<br /><br />
+</div><br />
+</span><span style="color:#000000;">                  employeeCol.EmployeeTables.Add(newEmployee);<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">            //ساندانغا قىستۇرۇش<br /><br />
+</div><br />
+</span><span style="color:#000000;">                  employeeDB.Employees.InsertOnSubmit(newEmployee);<br /><br />
+</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">            //ساندان ئۆزگىرىشىنى ساقلاش<br /><br />
+</div><br />
+</span><span style="color:#000000;">                  employeeDB.SubmitChanges();<br /><br />
+                }<br /><br />
+                <br /><br />
+                name.Text </span><span style="color:#000000;">=</span><span style="color:#000000;"> </span><span style="color:#800000;">""</span><span style="color:#000000;">;<br /><br />
+                desc.Text </span><span style="color:#000000;">=</span><span style="color:#000000;"> </span><span style="color:#800000;">""</span><span style="color:#000000;">;<br /><br />
+            }<br /><br />
+            </span><span style="color:#0000ff;">else</span><span style="color:#000000;"><br /><br />
+            {<br /><br />
+                MessageBox.Show(</span><span style="color:#800000;">"</span><span style="color:#800000;">姓名和简介不能为空！</span><span style="color:#800000;">"</span><span style="color:#000000;">);<br /><br />
+            }<br /><br />
+      }<br /><br />
+<br /><br />
+      </span><span style="color:#808080;">///</span><span style="color:#008000;"> </span><span style="color:#808080;">&lt;summary&gt;</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">       /<span style="color:#008000;">//</span>تەھرىرلەش مەشغۇلاتى<br /><br />
+</div><br />
+      </span><span style="color:#808080;">///</span><span style="color:#008000;"> </span><span style="color:#808080;">&lt;/summary&gt;</span><span style="color:#008000;"><br /><br />
+      </span><span style="color:#808080;">///</span><span style="color:#008000;"> </span><span style="color:#808080;">&lt;param name="sender"&gt;&lt;/param&gt;</span><span style="color:#008000;"><br /><br />
+      </span><span style="color:#808080;">///</span><span style="color:#008000;"> </span><span style="color:#808080;">&lt;param name="e"&gt;&lt;/param&gt;</span><span style="color:#808080;"><br /><br />
+</span><span style="color:#000000;">      </span><span style="color:#0000ff;">private</span><span style="color:#000000;"> </span><span style="color:#0000ff;">void</span><span style="color:#000000;"> editButton_Click(</span><span style="color:#0000ff;">object</span><span style="color:#000000;"> sender, RoutedEventArgs e)<br /><br />
+      {</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">         //كۇنۇپكىنىڭ چېكىلىشىنى ئېلىش مىسالى<br /><br />
+</div><br />
+</span><span style="color:#000000;">            var button </span><span style="color:#000000;">=</span><span style="color:#000000;"> sender </span><span style="color:#0000ff;">as</span><span style="color:#000000;"> Button;<br /><br />
+<br /><br />
+            </span><span style="color:#0000ff;">if</span><span style="color:#000000;"> (button </span><span style="color:#000000;">!=</span><span style="color:#000000;"> </span><span style="color:#0000ff;">null</span><span style="color:#000000;">)<br /><br />
+            {</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">            //نۆۋەتتىكى كۇنۇپكىغا باغلانغان DataContext نى، ھەمدە نۆۋەتتە تەھرىرلىگەن EmployeeTable مىسالىنى ئېلىش<br /><br />
+</div><br />
+</span><span style="color:#000000;">                EmployeeTable employeeForEdit </span><span style="color:#000000;">=</span><span style="color:#000000;"> button.DataContext </span><span style="color:#0000ff;">as</span><span style="color:#000000;"> EmployeeTable;<br /><br />
+                name.Text </span><span style="color:#000000;">=</span><span style="color:#000000;"> employeeForEdit.EmployeeName;<br /><br />
+                desc.Text </span><span style="color:#000000;">=</span><span style="color:#000000;"> employeeForEdit.EmployeeDesc;</span><span style="color:#008000;"><br /><br />
+<div dir="rtl" align="left">            //تەھرىرلىمەكچى بولغان مىسالنى State ئىچىگە ساقلاش<br /><br />
+</div><br />
+</span><span style="color:#000000;">                State[</span><span style="color:#800000;">"</span><span style="color:#800000;">employee</span><span style="color:#800000;">"</span><span style="color:#000000;">] </span><span style="color:#000000;">=</span><span style="color:#000000;"> employeeForEdit;<br /><br />
+                employeeCol.EmployeeTables.Remove(employeeForEdit);<br /><br />
+            }<br /><br />
+      }<br /><br />
+    }<br /><br />
+}</span></div><br />
+</div><br />
+<div dir="rtl" align="center">ئىجرا ھالىتى:</div><br />
+<div dir="rtl" align="center"><img alt="" src="./2011060819295273.jpg" /></div><br />
+<div dir="rtl" align="center"> <span style="font-family:Tahoma;"> </span></div><br />
+<div dir="rtl" align="right"> </div><br />
+<div dir="rtl" align="right"><span style="font-family:Alpida Unicode System;"> ئىزاھ:</span></div><br />
+<p> <span style="font-size:14px;"> </span> <table style="width:100%;" bordercolor="#64451d" cellspacing="0" cellpadding="2" border="1"><br />
+<tbody><br />
+<tr><br />
+<td style="width:75px;"><span style="font-size:14px;"> بۇغۇم سانى</span></td><br />
+<td style="width:85px;"><span style="font-size:14px;"> 汉文/英文</span></td><br />
+<td style="width:130px;"><span style="font-size:14px;">ئۇيغۇرچە</span></td><br />
+<td style="width:72px;"><span style="font-size:14px;">بۇغۇم سانى</span></td><br />
+<td><span style="font-size:14px;"> ئىزاھ</span></td><br />
+</tr><br />
+<tr><br />
+<td style="width:75px;"><span style="font-size:14px;"> 5</span></td><br />
+<td style="width:85px;"><span style="font-size:14px;"> 本地数据库</span></td><br />
+<td style="width:130px;"><span style="font-size:14px;">يەرلىك ساندان</span></td><br />
+<td style="width:72px;"><span style="font-size:14px;"> 4</span></td><br />
+<td><span style="font-size:14px;"> </span></td><br />
+</tr><br />
+<tr><br />
+<td style="width:75px;"><span style="font-size:14px;"> 4</span></td><br />
+<td style="width:85px;"><span style="font-size:14px;"> 应用程序</span></td><br />
+<td style="width:130px;"><span style="font-size:14px;">ئەپ تەرتىپ</span></td><br />
+<td style="width:72px;"><span style="font-size:14px;"> 3</span></td><br />
+<td><span style="font-size:14px;"></span><span lang="AR-SA" style="font-size:14px;font-family:"ALKATIP Tor Tom";">بۇرۇنقى ئەمەلىي قوللىنىلىدىغان پروگرامما (بۇغۇم سانى: 13) دىگەن تولۇق سۆزدىن ئىخچاملانغان، ئەپ بولسا ئەپلىك سۆزىنىڭ يىلتىزى، پروگرامما سۆزىنىڭ باشقا تىلدىكى مەنىسى بولسا تەرتىپ. </span><span lang="EN-US" dir="ltr" style="font-size:14px;font-family:"ALKATIP Tor Tom";">Application</span><span lang="AR-SA" style="font-size:14px;font-family:"ALKATIP Tor Tom";"> نى ئېنگىلىزلارمۇ تور ۋە كەسپىي جۈملىلەردە </span><span lang="EN-US" dir="ltr" style="font-size:14px;font-family:"ALKATIP Tor Tom";">app</span><span lang="AR-SA" style="font-size:14px;font-family:"ALKATIP Tor Tom";"> دەپ قىسقارتىپ ئېلىۋاتىدۇ.<?xml:namespace prefix = o /><o:p></o:p></span></td><br />
+</tr><br />
+<tr><br />
+<td style="width:75px;"><span style="font-size:14px;"> 2</span></td><br />
+<td style="width:85px;"><span style="font-size:14px;"> 字段</span></td><br />
+<td style="width:130px;"><span style="font-size:14px;">ھالقا</span></td><br />
+<td style="width:72px;"><span style="font-size:14px;"> 2</span></td><br />
+<td></td><br />
+</tr><br />
+<tr><br />
+<td style="width:75px;"><span style="font-size:14px;"> 2</span></td><br />
+<td style="width:85px;"><span style="font-size:14px;"> 主键</span></td><br />
+<td style="width:130px;"><span style="font-size:14px;">ئاچقۇچ</span></td><br />
+<td style="width:72px;"><span style="font-size:14px;"> 2</span></td><br />
+<td><span style="font-size:14px;"> </span></td><br />
+</tr><br />
+<tr><br />
+<td style="width:75px;"><span style="font-size:14px;"> 2</span></td><br />
+<td style="width:85px;"><span style="font-size:14px;"> ID</span></td><br />
+<td style="width:130px;"><span style="font-size:14px;">ID</span></td><br />
+<td style="width:72px;"><span style="font-size:14px;"> 2</span></td><br />
+<td><span style="font-size:14px;"> </span><span lang="EN-US" dir="ltr" style="font-size:14px;font-family:"ALKATIP Tor Tom";">Identity</span><span lang="AR-SA" style="font-size:14px;font-family:"ALKATIP Tor Tom";"> نىڭ قىسقارتىلمىسى. قانداق قىلىمىز؟</span><span lang="EN-US" dir="ltr" style="font-size:5pt;font-family:"ALKATIP Tor Tom";"><o:p></o:p></span></td><br />
+</tr><br />
+<tr><br />
+<td style="width:75px;"><span style="font-size:14px;"> 2</span></td><br />
+<td style="width:85px;"><span style="font-size:14px;"> 数据</span></td><br />
+<td style="width:130px;"><span style="font-size:14px;">مەلۇمات</span></td><br />
+<td style="width:72px;"><span style="font-size:14px;"> 3</span></td><br />
+<td><span style="font-size:14px;"></span><span lang="AR-SA" style="font-size:14px;font-family:"ALKATIP Tor Tom";">سانلىق مەلۇمات سۆزىدىن ئىخچاملاشتۇرۇلدى، مەلۇمات سۆزى ھەر قانداق ئۇچۇرغا، جۈملىدىن سان، سۈرەت، ئاۋاز، سىن ھەممىسىنى مۇۋاپىق ئىپادىيەلەيدۇ، كومپيۇتېر كەسپىي ئاتالغۇسىدا شۇ مەزمۇننى ئىپادىلەشكە ئادەتلەنسەك بولىدۇ.<o:p></o:p></span></td><br />
+</tr><br />
+<tr><br />
+<td style="width:75px;"><span style="font-size:14px;"> 3</span></td><br />
+<td style="width:85px;"><span style="font-size:14px;"> 上下文</span></td><br />
+<td style="width:130px;"><span style="font-size:14px;">ماسلىق خەت</span></td><br />
+<td style="width:72px;"><span style="font-size:14px;"> 3</span></td><br />
+<td><span style="font-size:14px;"></span><span lang="EN-US" dir="ltr" style="font-size:14px;font-family:"ALKATIP Tor Tom";">context</span><span lang="AR-SA" style="font-size:14px;font-family:"ALKATIP Tor Tom";"> سۆزىنىڭ كومپيۇتېر كەسپىدىكى مەنىسىنى ئىپادىلەيدۇ، ئىپادىلەيدىغان مەنىسى بولسا، پۈتۈن پروگراممىنىڭ باشتىن- ئاخىر قىسىمىدا ساندان ئۇلىنىش بەلگىلىرى قاتارلىق مىقدارلارنى بىرلىككە كەلتۈرۈش، ماسلاشتۇرۇش رولىنى ئوينايدىغان بىر بۆلەك خەت. (تېكست سۆزىنىڭ باشقا تىلدىكى مەنىسى بولسا خەت)<o:p></o:p></span></td><br />
+</tr><br />
+<tr><br />
+<td style="width:75px;"><span style="font-size:14px;"> 5</span></td><br />
+<td style="width:85px;"><span style="font-size:14px;"> 自增的ID</span></td><br />
+<td style="width:130px;"><span style="font-size:14px;">ئاشار ID</span></td><br />
+<td style="width:72px;"><span style="font-size:14px;"> 4</span></td><br />
+<td><span style="font-size:14px;"></span><span lang="AR-SA" style="font-size:14px;font-family:"ALKATIP Tor Tom";">ئۆزى ئاشار مەنىسىدىن تېخىمۇ قىسقارتىلدى، نىشان مەنىدە قوللىنىشقا مۇۋاپىق<o:p></o:p></span></td><br />
+</tr><br />
+<tr><br />
+<td style="width:75px;"><span style="font-size:14px;"> 1</span></td><br />
+<td style="width:85px;"><span style="font-size:14px;"> 类, Class</span></td><br />
+<td style="width:130px;"><span style="font-size:14px;">تۈر</span></td><br />
+<td style="width:72px;"><span style="font-size:14px;"> 1</span></td><br />
+<td><span style="font-size:14px;"></span><span lang="AR-SA" style="font-size:14px;font-family:"ALKATIP Tor Tom";">تەكلىپ ئاتالغۇ. كۆنمەك سەل تەل، مۇناسىۋەتلىك جۈملىدە بىلگىلى بولىدۇ.</span><span lang="EN-US" dir="ltr" style="font-size:5pt;font-family:"ALKATIP Tor Tom";"><o:p></o:p></span></td><br />
+</tr><br />
+<tr><br />
+<td style="width:75px;"><span style="font-size:14px;"> 3</span></td><br />
+<td style="width:85px;"><span style="font-size:14px;">字符串 </span></td><br />
+<td style="width:130px;"><span style="font-size:14px;">ھەرپ تىزىق</span></td><br />
+<td style="width:72px;"><span style="font-size:14px;"> 3</span></td><br />
+<td><span style="font-size:14px;"></span><span lang="AR-SA" style="font-size:14px;font-family:"ALKATIP Tor Tom";">لوغەتتە ھەرپ-بەلگە تىزىقى (بۇغۇم سانى:6) دەپ ئېلىنغان، لېكىن پروگراممېرلارنىڭ قىممەتلىك سۆز ۋاقتى ئۈچۈن قىسقارتىپ ئادەتلەنسەك.<o:p></o:p></span></td><br />
+</tr><br />
+<tr><br />
+<td style="width:75px;"><span style="font-size:14px;"> 5</span></td><br />
+<td style="width:85px;"><span style="font-size:14px;"> 连接字符串</span><br /><br />
+<br /><br />
+</td><br />
+<td style="width:130px;"><span style="font-size:14px;">ئۇلاش ھەرپ تىزىقى</span><br /><br />
+<span style="font-size:14px;">ئۇلاش ھەرپ تىزمىسى</span><br /><br />
+<span style="font-size:14px;">ئۇلاش تىزمىسى</span></td><br />
+<td style="width:72px;"><span style="font-size:14px;">6</span><br /><br />
+<span style="font-size:14px;">6</span><br /><br />
+<span style="font-size:14px;">5</span></td><br />
+<td><br /><br />
+<br /><br />
+<span style="font-size:14px;"></span><span lang="AR-SA" style="font-size:14px;font-family:"ALKATIP Tor Tom";">بۇ ئىككىلا سۆز بولغاچقا، پروگراممېرلار ۋە ئوقۇغۇچىلار ئاسانلا ئادەتلىنىشى مۇمكىن.<o:p></o:p></span></td><br />
+</tr><br />
+<tr><br />
+<td style="width:75px;"><span style="font-size:14px;"> 2</span></td><br />
+<td style="width:85px;"><span style="font-size:14px;"> 加载</span></td><br />
+<td style="width:130px;"><span style="font-size:14px;"> يۈكلەش</span></td><br />
+<td style="width:72px;"><span style="font-size:14px;"> 2</span></td><br />
+<td><span style="font-size:14px;"> </span></td><br />
+</tr><br />
+<tr><br />
+<td style="width:75px;"><span style="font-size:14px;"> 4</span></td><br />
+<td style="width:85px;"><span style="font-size:14px;"> 加载事件</span></td><br />
+<td style="width:130px;"><span style="font-size:14px;"> يۈكلەش ئەھۋالى</span></td><br />
+<td style="width:72px;"><span style="font-size:14px;"> 5</span></td><br />
+<td><span style="font-size:14px;"> </span></td><br />
+</tr><br />
+</tbody><br />
+</table><br />
+</p>				<p class="author">
+					<strong>Qarluq</strong>
+				يوللانغان ۋاقتى 2012-1-7 12:54:02	</p>
+			<h3></h3>
+		نىمە ئىش بۇلۇپ كەتتى.. مەن ھىچنىمنى چۈشنەلمىدىمغۇ...   {:106:}    {:107:}   <img alt=\"\" src=\"images/face/qq/034.gif\"/><img alt=\"\" src=\"images/face/qq/033.gif\"/>			<div class="page">
+		بەت: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	:
+	<a href="./izdinish44674.html" target="_blank"><strong>Windows Phone 7.1 (مانگو) دا SQLSeerver CE ساندان ماڭدۇرغىلى بولىدۇ</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="./www.discuz.net">Discuz! X3.2 Archiver</a></strong>(<a title="ULP:20141102 by Nurqut Team" target="_blank" href="./www.nurqut.net">NurQut Team</a>)   © 2001-2013 <a target="_blank" href="./www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>

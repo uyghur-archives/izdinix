@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143956760-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-143956760-1');
+</script>
+
+<base href="./" />
+<title>ASP.NET نىڭ ئالاھىدە بەلگىلەرنى Request دا توسۇۋېلىش ئەھۋالىنى بىر تەرەپ قى...-ئىزدىنىش تورى</title>
+<link href="./izdinish58385.html" rel="canonical" />
+<meta name="keywords" content="ئىزدىنىش تورى  ASP.NET نىڭ ئالاھىدە بەلگىلەرنى Request دا توسۇۋېلىش ئەھۋالىنى بىر تەرەپ قى..." />
+<meta name="description" content="ئىزدىنىش تورى  ASP.NET نىڭ ئالاھىدە بەلگىلەرنى Request دا توسۇۋېلىش ئەھۋالىنى بىر تەرەپ قى... ,ئىزدىنىش تور بېكىتى" />
+<meta name="generator" content="Discuz! X2.5" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2012 Comsenz Inc." />
+<style type="text/css">
+	@font-face {
+		font-family: "Alpida Unicode System";
+		font-weight: normal;
+		src:url(/aus.eot); /* IE */
+		src: local("Alpida Unicode System"), url("/aus.ttf") format("TrueType"); /* non-IE */
+	}
+	* { word-wrap: keep-all; }
+	body {direction:rtl;font-family: alpida unicode system, ukij tuz tom, Verdana;FONT-SIZE: 15px;MARGIN: 0;color: #000000;background: #ffffff;}
+	img {border:0;}
+	li {margin-top: 8px;}
+	.page {padding: 4px; border-top: 1px #EEEEEE solid}
+	.author {background-color:#EEEEFF; padding: 6px; border-top: 1px #ddddee solid}
+	#nav, #content, #end {padding: 8px; border: 1px solid #EEEEEE; clear: both; width: 95%; margin: auto; margin-top: 10px;}
+	#header, #footer { margin-top: 20px; }
+	#loginform {text-align: center;}
+</style>
+</head>
+<body vlink="#333333" link="#333333">
+<center id="header">
+<h2>ئىزدىنىش تور بېكىتى</h2>
+</center><div id="nav">
+	<a href="./">ئىزدىنىش مۇنبىرى</a> › <a href="./?fid-112.html">كومپيۇتېر ۋە ئىنتېرنېت بىلىملىرى</a> › ASP.NET نىڭ ئالاھىدە بەلگىلەرنى Request دا توسۇۋېلىش ئەھۋالىنى بىر تەرەپ قى...</div>
+
+<div id="content">
+			<p class="author">
+					<strong>heqteyur</strong>
+				يوللانغان ۋاقتى 2014-5-14 09:09:56	</p>
+			<h3>ASP.NET نىڭ ئالاھىدە بەلگىلەرنى Request دا توسۇۋېلىش ئەھۋالىنى بىر تەرەپ قى...</h3>
+		ئەسسالامۇ ئەلەيكۇم، پروگراممېر دوستلار، يېقىندا يۇقۇرىدا تېمىدا تىلغان ئالغان مەسىلە ناھايىتى كۆپ ۋاقتىمنى ئالدى، بۇنداق كۆپ ئاۋارىچىلىق تارتىپ كېتىشىمدىكى ئاساسلىق سەۋەپ ASP.NET نىڭ قۇرۇلمىسىنى ياخشى چۈشەنمىگەنلىتىن بولدى دەپ قارايمەن.<br />
+«ۋەقە» نىڭ جەريانى مۇنداق ئىدى:<br />
+يېقىندا ASP.NET تور پروگراممىسى ھالىتىدە بىر تۈرنى ئىشلەش زۆرۈر بولۇپ، ASP.NET نىڭ Web From قۇرۇلمىسىنى ئىشلەتمەي مۇلازىمىتېر تەرەپ بىلەن بولغان ئالاقىنى پۈتۈنلەي Request , Response ئارقىلىق Ajax دىن پايدىلىنىش، ئالدى تەرەپكە ساپ HTML ۋە Jquery EasyUI , BootStrap قۇرۇلمىلىرىدىن پايدىلىنىش. مانا بۇ ئاساسلىق قۇرۇلما لايھىسە ئىدى. <br />
+بارلىق كود يېزى لايىھىلەش ئىشلىرى ناھايىتى نورمال كېتىپ بېرىپ Ckeditor غا يازغان مەزمۇننى مۇلازىمىتېرغا يوللاشتا ئېغىر مەسىلىگە يولۇقتۇم، ئەگەر  Web From قۇرۇلمىسىنى ۋە Ckeditor نىڭ مۇلازىمىتېر تەرەپ كونترولنى ئىشلەتكەن بولسام بۇنداق مەسىلە مەۋجۈت ئەمەس ئىدى، مەيلى قانداقلا سىناي مۇلازىتېر تەرەپتىن 500 خاتالىق چىقتى، Ckeditor دا يازغان مەزمۇننى تاپشۇرغاندا Ajax ئارقىلىق تاپشۇرغاچقا پەقەتلا 500 خاتالىق كودى قايتىپ خاتالىق ئىزاھاتىنى قايتۇرمىغانلىقتىن نېمە خاتالىق ئىكەنلىكىنى بىلەلمەي كودنى تۇلا ئۆزگەرتىپ سىناپ نەچچە كۈن ئىچىدىمۇ مەسىلىنى ھەل قىلالماي قالدىم. بۈگۈن ئەتىگەن مەسىلە ھەل بولدى، شۇنىڭ بىلەن بۇنى خاتىرىلەپ قويۇشنى مۇۋاپىق كۆردۈم، ھەم باشقىلارمۇ مۇشۇنداق ئەھۋالغا ئۇچراپ قالسا مەندەك قىينىلىپ يۈرمىسۇن دېگەننى ئويلىدىم.<br />
+مەسىلە چىقىستىكى سەۋەپ: Ckeditor غا يازغان مەزمۇن HTML كودى ۋە CSS كودلىرى ئارقىلىق فورماتلانغان بولغاچقا، بۇنىڭدا نۇرغۇن ئالاھىدە ھەرپ بەلگىلەر مەۋجۈت،  ASP.NET بولسا كۆڭۈلدىكى تەڭشىكىدە ئابونت تەرەپتىن كەلگەن ئىلتىماسنى تەكشۈرۈپ ئەگەر ئالاھىدە ھەرپ بەلگە بولسا خاتالىق ئۇچۇرى قايتۇرۇپ پروگراممىنىڭ ئىجرا بولۇشنى توختىتىپ قويىدىكەن، بۇنداق قىلىشتىكى مەقسەت ئەلۋەتتە بىخەتەرلىك ئۈچۈن. بۇ يەردىكى خەتەرنى ئەگەر پروگراممېر ئۆزى ھەل قىلىشقا كۆزى يەتسە بۇ توشۇش ئىقتىدارىنى ئىتىۋېتىش كېرەك ئىكەن، بولمىسا ئابونت تەرەپتىن كەلگەن ئالاھىدە ھەرپ بەلگە بار ئلېتىماسنى قوبۇل قىلغىلى بولمايدۇ. <br />
+ھەل قىلىش ئۇسۇلى: بىز پەقەت Web.config نىڭ ئىچىگە تۆۋەندىكى ئىككى قۇر كودنى يېزىپ قويساقلا يۇقارقى كۆڭۈلدىكى بىخەتەرلىك تەكشۈرۈش ئىقتىدارىنى ئىتىۋىتەلەيمىز. بۇ كودنى system.web بۆلىكىنىڭ ئىچىگە يازىمىز.<br />
+1<br />
+<httpRuntime requestValidationMode="2.0" /><br />
+<pages validateRequest="false"/><br />
+<br />
+<br />
+يەنى تۆۋەندىكى رەسىمدىكىدەك ھالەتتە يېزىلىشى كېرەك.<br />
+<br />
+پروگراممېر بولۇشنى ئارزۇ قىلامسىز؟!<br />
+				<p class="author">
+					<strong>Mouse</strong>
+				يوللانغان ۋاقتى 2014-5-14 09:36:16	</p>
+			<h3></h3>
+		بۇنداق بولغاندا ئالاھىدە ھەرپ-بەلگىلەرنى توسۇشنى مەجبۇرى ئېتىۋېتىدىكەن -دە؟ 				<p class="author">
+					<strong>heqteyur</strong>
+				يوللانغان ۋاقتى 2014-5-14 19:41:35	</p>
+			<h3></h3>
+		Mouse يوللىغان ۋاقتى  2014-5-14 09:36 static/image/common/back.gif<br />
+بۇنداق بولغاندا ئالاھىدە ھەرپ-بەلگىلەرنى توسۇشنى مەجب ...<br />
+<br />
+شۇنداق، بۇ يەردىكى چىققان خاتالىقنى بايقاش ناھايىتى ئاسان ئىدى، مەن Request نى Ajax ئارقىلىق قىلغان بولغاچقا خاتالىق ئۇچۇرى ئېنىق چىقماي، يا مېنىڭ ئىسىمگە كەلمەي بۇ ئىش، جىق ئاۋارىچىلىق تارتىپ قالدىم. 			<div class="page">
+		بەت: 
+<strong>[1]</strong> 
+	</div>
+</div>
+
+<div id="end">
+	:
+	<a href="./izdinish58385.html" target="_blank"><strong>ASP.NET نىڭ ئالاھىدە بەلگىلەرنى Request دا توسۇۋېلىش ئەھۋالىنى بىر تەرەپ قى...</strong></a>
+</div>
+<br />
+<center>
+		<div id="footer">
+		Powered by <strong><a target="_blank" href="./www.discuz.net">Discuz! X2.5 Archiver</a></strong>   © 2001-2012 <a target="_blank" href="./www.comsenz.com">Comsenz Inc.</a>
+		<br />
+		<br />
+	</div>
+</center>
+</body>
+</html>
